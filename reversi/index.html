@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reversi Pace — Support</title>
+<style>
+  :root { --ink:#0e1014; --panel:#171b21; --bone:#f2ede3; --muted:#9aa0a8; --brass:#e0a63e; --line:#2a2f37; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--ink); color:var(--bone);
+         font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang TC","Hiragino Sans",sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 22px 80px; }
+  h1 { font-size:1.7em; margin:0 0 4px; }
+  h1 small { display:block; font-size:.55em; color:var(--muted); font-weight:400; }
+  h2 { color:var(--brass); font-size:1.15em; margin:2.2em 0 .6em; }
+  h3 { font-size:1em; margin:1.8em 0 .4em; color:var(--bone); }
+  p, li { color:#d8d3c8; }
+  .q { font-weight:600; color:var(--bone); margin:1.4em 0 .2em; }
+  .a { margin:.2em 0 0; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:18px 0; }
+  .nav { display:flex; gap:14px; margin:18px 0 6px; font-size:.95em; }
+  .nav a { color:var(--brass); text-decoration:none; border:1px solid var(--line);
+           padding:6px 14px; border-radius:999px; }
+  a { color:var(--brass); }
+  hr { border:0; border-top:1px solid var(--line); margin:40px 0; }
+  mark { background:#4a3a12; color:#ffd982; padding:0 6px; border-radius:6px; }
+  footer { color:var(--muted); font-size:.85em; margin-top:48px; }
+  ul { padding-left:1.2em; }
+  .store { margin:14px 0 0; }
+  .store-btn { display:inline-block; background:var(--brass); color:var(--ink); font-weight:600;
+               padding:10px 18px; border-radius:999px; text-decoration:none; }
+</style>
+</head>
+<body>
+<main>
+<h1>Reversi Pace<small>Support · 支援</small></h1>
+<nav class="nav"><a href="#en">English</a><a href="#zh">繁體中文</a><a href="privacy.html">Privacy · 隱私權政策</a></nav>
+<!-- APP STORE BUTTON — 發佈日啟用:把 APPLE_ID 換成 ASC ▸ App 資訊 ▸ Apple ID 的數字,移除本註解標記(Runbook §8.2)
+<p class="store"><a class="store-btn" href="https://apps.apple.com/app/idAPPLE_ID" rel="noopener">Download on the App Store · 在 App Store 下載</a></p>
+-->
+
+<section id="en">
+<div class="card">
+<p>Questions or suggestions? Email <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>.<br>
+We reply as soon as we can, but this is a one-person project, so it may take a few days. Thank you for your patience.</p>
+<p>Including the following helps us find the problem faster:</p>
+<ul>
+<li>Device model (e.g. iPhone SE 3rd generation)</li>
+<li>iOS version</li>
+<li>App version (shown under Me ▸ About)</li>
+<li>Steps that led to the problem</li>
+</ul>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<h3>Gameplay</h3>
+<p class="q">Q: Why is it not my turn sometimes?</p>
+<p class="a">A: When you have no legal move, the rules of Reversi require you to pass and your opponent plays again. The screen shows “has no move — passing”. This is not a bug.</p>
+<p class="q">Q: Why can’t I place a disc on an empty square?</p>
+<p class="a">A: A move must trap at least one unbroken line of opponent discs and flip them. Squares that trap nothing are not legal. The small dots show every legal move.</p>
+<p class="q">Q: What is “tap twice to place”?</p>
+<p class="a">A: By default the first tap shows a translucent preview disc and marks every disc that would flip with a dashed ring. Tapping the same square again commits the move. You can switch to single-tap in Settings.</p>
+
+<h3>Scoring and time</h3>
+<p class="q">Q: Why does my score keep going down?</p>
+<p class="a">A: Each game starts at 100,000 points. Win within one minute to keep them all; after that you lose 100 points per second. Playing well is only half of it — you also have to play fast.</p>
+<p class="q">Q: Does the computer’s thinking time count against me?</p>
+<p class="a">A: No. The clock runs only while the game is waiting for you, and stops entirely while the computer thinks. It also pauses when the App goes to the background.</p>
+<p class="q">Q: What are Gold, Silver and Bronze?</p>
+<p class="a">A: Tiers awarded on a win, based on your time: Gold under one minute, Silver under three, Bronze under five. The score meter marks all three thresholds.</p>
+<p class="q">Q: I won but my score is low. Why?</p>
+<p class="a">A: One of these: you took a long time, the difficulty weight is low (Beginner ×0.2, Intermediate ×0.6), or you used Retry — each retry multiplies your score by 0.75.</p>
+
+<h3>Undo and retry</h3>
+<p class="q">Q: Why do I have a different number of free credits?</p>
+<p class="a">A: It depends on difficulty: Beginner 3, Intermediate 2, Advanced 1, Expert and above 0. This allowance is shared between Undo during a game and Retry after a loss — spend all of it on undos and no free retry remains. Each undo adds 30 seconds to your clock.</p>
+<p class="q">Q: I’ve used all my free credits.</p>
+<p class="a">A: Undo and Retry each have a separate rewarded-ad allowance: ad undo up to three per game (adds 45 seconds); ad retry up to five per game. Both require watching a rewarded ad, which needs a network connection.</p>
+<p class="q">Q: How far back does Retry go?</p>
+<p class="a">A: It depends on the opponent: six plies (three of your moves) at Intermediate and below, ten plies (five of your moves) from Advanced up — stronger opponents punish mistakes from further back. It always lands on your turn. If the game is too short for that, it rewinds to the opening. The button shows which move you’ll return to.</p>
+
+<h3>Difficulty and unlocking</h3>
+<p class="q">Q: Why are some difficulties locked?</p>
+<p class="a">A: Beginner, Intermediate and Advanced are open from the start. Expert needs 3 wins against Advanced, and Pro A needs 5 wins against Expert. Each locked level shows its condition.</p>
+<p class="q">Q: I won using a rewarded-ad undo but my unlock progress didn’t move.</p>
+<p class="a">A: Games that used a rewarded ad don’t count towards unlock progress or your best score, though they still count towards games played and win rate. This keeps unlocking a measure of skill.</p>
+<p class="q">Q: When will the “coming soon” difficulties be available?</p>
+<p class="a">A: Pro B and Master are planned for a future update.</p>
+
+<h3>Data and sync</h3>
+<p class="q">Q: Will I lose my history when I change phones?</p>
+<p class="a">A: As long as both devices are signed in to the same iCloud account and the App is allowed to use iCloud, your records sync automatically. If they don’t, check Settings › [your name] › iCloud and make sure the App is enabled.</p>
+<p class="q">Q: What does “Clear all records” remove?</p>
+<p class="a">A: All game records and transcripts. Because your rank and unlocked difficulties are derived from those records, your rank resets and unlocked levels lock again. Records on your other devices are deleted too. This cannot be undone.</p>
+<p class="q">Q: Can I delete a single game?</p>
+<p class="a">A: Not currently — only clearing everything is supported.</p>
+
+<h3>Advertising</h3>
+<p class="q">Q: Why do I still see a panel when I’m offline?</p>
+<p class="a">A: With no network we show our own content in the same slot so the layout stays the same whether you’re online or not. It is not an advert and does not link out.</p>
+<p class="q">Q: The rewarded ad button is greyed out.</p>
+<p class="a">A: Rewarded ads need a network connection. Check your connection and try again. Ad blockers or custom DNS can also prevent ads from loading.</p>
+<p class="q">Q: Can I remove the ads?</p>
+<p class="a">A: Not in the current version. We’re considering it for a future update.</p>
+
+<h3>Accessibility</h3>
+<p class="q">Q: Does the App support VoiceOver?</p>
+<p class="a">A: Yes. Every square on the board has a spoken label giving its coordinate, its current state, and how many discs a move there would flip.</p>
+<p class="q">Q: Can I turn off the flipping animation?</p>
+<p class="a">A: Turn on Settings › Accessibility › Motion › Reduce Motion in iOS and the App automatically disables disc rotation and spring animations.</p>
+
+<div class="card">
+<p>Feature ideas, translation errors and rule questions are all welcome: <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></p>
+<p>If you spot wording that reads unnaturally in your language, we’d especially like to hear from you — that kind of feedback is invaluable for a multilingual app.</p>
+</div>
+</section>
+
+<hr>
+
+<section id="zh">
+<div class="card">
+<p>有問題或建議?請寄信到 <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>。<br>
+我們會盡快回覆,但這是一人開發的專案,回覆可能需要幾天,感謝你的耐心。</p>
+<p>寄信時如果能附上下列資訊,會有助於我們更快找出問題:</p>
+<ul>
+<li>裝置型號(例如 iPhone SE 第 3 代)</li>
+<li>iOS 版本</li>
+<li>App 版本(可在「我 ▸ 關於遊戲」看到)</li>
+<li>問題發生的步驟</li>
+</ul>
+</div>
+
+<h2>常見問題</h2>
+
+<h3>玩法與規則</h3>
+<p class="q">Q:為什麼有時候輪不到我下?</p>
+<p class="a">A:當你沒有任何合法落子位置時,依黑白棋規則必須跳過(Pass),由對手連續下。畫面上會顯示「無處可下,換手」。這不是程式錯誤。</p>
+<p class="q">Q:為什麼我不能下在空格上?</p>
+<p class="a">A:黑白棋的落子必須至少夾住一段連續的對手棋子並將其翻面。不能夾吃的位置就是非法步。畫面上的小圓點標示了所有可以下的位置。</p>
+<p class="q">Q:什麼是「二段確認」?</p>
+<p class="a">A:預設情況下,第一次點擊會顯示半透明的預覽棋子,並用虛線圈標出會被翻掉的每一顆棋子;再點同一格才真正落子。若你偏好單擊直接落子,可在「設定」中關閉此功能。</p>
+
+<h3>分數與計時</h3>
+<p class="q">Q:為什麼我的分數一直在減少?</p>
+<p class="a">A:每局滿分十萬分。一分鐘內獲勝可拿滿分,超過之後每秒扣一百分。這是遊戲設計的一部分 —— 下得好還要下得快。</p>
+<p class="q">Q:電腦思考的時間會算在我頭上嗎?</p>
+<p class="a">A:不會。計時器只在等待你落子時計算,電腦思考時完全暫停。App 切到背景時也會暫停。</p>
+<p class="q">Q:金級、銀級、銅級是什麼?</p>
+<p class="a">A:獲勝時依用時給予的等級:一分鐘內金級、三分鐘內銀級、五分鐘內銅級。對局畫面的分數條上有三道刻度標示這些門檻。</p>
+<p class="q">Q:為什麼我明明贏了卻只有很低的分數?</p>
+<p class="a">A:可能是下列原因之一:用時較長,時間分被扣掉;難度加權較低(初學者 ×0.2、中手 ×0.6);使用過「重來」,每次重來分數再乘 0.75。</p>
+
+<h3>悔棋與重來</h3>
+<p class="q">Q:免費額度為什麼不一樣?</p>
+<p class="a">A:依難度而定:初學者 3 次、中手 2 次、高手 1 次、專家以上 0 次。這個額度由「對局中悔棋」與「輸局後重來」共用 —— 例如中手有 2 次,悔棋用掉 2 次之後,就沒有免費的重來可用了。每次悔棋會在計時上加算 30 秒。</p>
+<p class="q">Q:免費額度用完了怎麼辦?</p>
+<p class="a">A:悔棋與重來各自還有獨立的廣告額度:廣告悔棋每局最多 3 次(計時加算 45 秒);廣告重來每局最多 5 次。兩者都需要觀看獎勵式廣告,需要網路連線。</p>
+<p class="q">Q:輸了之後的「重來」會退回多少手?</p>
+<p class="a">A:依對手強度而定:中手(含)以下往回 6 手(你的 3 手),高手(含)以上往回 10 手(你的 5 手)——越強的對手,致命錯誤發生得越早。回退一律停在輪到你的局面。若當時手數不足,會退到開局重新下。實際退到第幾手會顯示在按鈕上方。</p>
+
+<h3>難度與解鎖</h3>
+<p class="q">Q:為什麼有些難度是鎖住的?</p>
+<p class="a">A:初學者、中手、高手一開始就可以玩,不需要解鎖。專家需要擊敗高手 3 次,職業 A 需要擊敗專家 5 次。選單上會顯示每個等級的解鎖條件。</p>
+<p class="q">Q:我用廣告悔棋贏的,為什麼解鎖進度沒有增加?</p>
+<p class="a">A:使用過廣告獎勵的對局不計入解鎖進度與最高分,但仍會計入場次與勝率。這是為了讓解鎖代表實力。</p>
+<p class="q">Q:「敬請期待」的難度什麼時候開放?</p>
+<p class="a">A:職業 B 與大師會在後續版本推出。</p>
+
+<h3>資料與同步</h3>
+<p class="q">Q:換手機之後戰績會不見嗎?</p>
+<p class="a">A:只要你在兩台裝置上都登入同一個 iCloud 帳號,並允許本 App 使用 iCloud,戰績會自動同步。如果沒有同步,請檢查「設定 › [你的名字] › iCloud」中本 App 是否已開啟。</p>
+<p class="q">Q:「清除全部紀錄」會清掉什麼?</p>
+<p class="a">A:所有對局紀錄與棋譜,而且因為段位與解鎖是由紀錄推算的,段位會歸零、已解鎖的難度會重新鎖上。其他裝置上的紀錄也會一併刪除。此動作無法復原。</p>
+<p class="q">Q:我可以只刪掉某一局嗎?</p>
+<p class="a">A:目前只支援清除全部紀錄。</p>
+
+<h3>廣告</h3>
+<p class="q">Q:為什麼離線時還是會看到版位?</p>
+<p class="a">A:沒有網路時我們會在同一個位置顯示 App 自己的內容,讓有網路與沒網路的版面一致。這不是廣告,也不會連到外部網站。</p>
+<p class="q">Q:獎勵式廣告的按鈕是灰的,按不下去。</p>
+<p class="a">A:獎勵式廣告需要網路連線。請確認網路狀態後再試。如果你使用了廣告封鎖或自訂 DNS,也可能造成無法載入。</p>
+<p class="q">Q:可以移除廣告嗎?</p>
+<p class="a">A:目前版本尚未提供移除廣告的選項,未來版本會評估加入。</p>
+
+<h3>無障礙</h3>
+<p class="q">Q:支援 VoiceOver 嗎?</p>
+<p class="a">A:支援。棋盤上每一格都有語音標籤,會朗讀座標、目前狀態,以及在該處落子會翻掉幾顆棋子。</p>
+<p class="q">Q:可以關閉翻子動畫嗎?</p>
+<p class="a">A:開啟 iOS 的「設定 › 輔助使用 › 動態效果 › 減少動態效果」後,本 App 會自動關閉棋子的旋轉與彈跳動畫。</p>
+
+<div class="card">
+<p>功能建議、翻譯錯誤、規則疑問都歡迎來信:<a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></p>
+<p>若你發現某個語言的翻譯不自然或用詞不正確,特別歡迎告訴我們 —— 這類回饋對多語系 App 非常有幫助。</p>
+</div>
+</section>
+
+<footer>
+<p><a href="privacy.html">Privacy Policy · 隱私權政策</a></p>
+<p>Reversi Pace is developed by Chien-Ting Liao.<br>
+This app is not affiliated with any board game organisation or trademark holder.<br>
+黑白棋 Pace 由 Chien-Ting Liao 開發。本 App 與任何棋類組織或商標持有人均無關聯。</p>
+</footer>
+</main>
+</body>
+</html>
