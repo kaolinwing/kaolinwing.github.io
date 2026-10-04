@@ -31,12 +31,12 @@
 <nav class="nav"><a href="#en">English</a><a href="#zh">繁體中文</a><a href="index.html">Support · 支援</a></nav>
 
 <section id="en">
-<p class="updated">Last updated: 9 September 2026 · Applies to version 1.0</p>
+<p class="updated">Last updated: 4 October 2026 · Applies to version 1.0</p>
 <p>Checkers Pace (“the App”) is developed and maintained by Chien-Ting Liao (“we”, “us”). This policy explains how the App handles your data.</p>
 
 <h2>1. What we do not collect</h2>
 <p>The App requires no registration and no account. We do not obtain your Apple ID, name, email address or phone number.</p>
-<p>The App contains no analytics, no tracking and no third-party software development kit of any kind. The only network traffic it generates is the synchronisation of your own game records to your own iCloud account, described in section 3.</p>
+<p>The App contains no analytics and does no tracking of its own. Its only third-party component is the Google Mobile Ads SDK, which shows the ads described in section 4. Apart from advertising, the only network traffic the App generates is the synchronisation of your own game records to your own iCloud account, described in section 3.</p>
 <p>We operate no servers and have no back-office system capable of reading your data.</p>
 
 <h2>2. Data stored on your device</h2>
@@ -57,20 +57,31 @@
 <p>You can turn off iCloud access for the App at any time in iOS Settings; the App then keeps working with the records on that device only. There is no separate switch inside the App, so there is never a conflict between two settings.</p>
 
 <h2>4. Advertising and tracking</h2>
-<p>Version 1.0 contains no advertising SDK and shows no third-party advertising.</p>
-<p>The App does not ask for tracking permission through App Tracking Transparency, because it does not track you and has no advertising identifier to share.</p>
-<p>If a future version introduces advertising, we will update this page and the App Store privacy label before that version is released, and say so inside the App.</p>
+<p>The App is free and displays advertising supplied by Google AdMob: a banner during games on larger screens, an occasional full-screen ad when you return to the home screen, and optional rewarded ads you can choose to watch for an extra undo or retry.</p>
+<p>Google and its partners may collect the following to serve and measure ads:</p>
+<ul>
+<li>Advertising identifier (only if you allow tracking)</li>
+<li>Device information (model, OS version, language, approximate region)</li>
+<li>Ad interaction data (impressions, clicks)</li>
+<li>Diagnostic data (crashes and performance of the advertising SDK)</li>
+</ul>
+<p>This data is handled by Google under its own privacy policy. We cannot access it.<br>
+Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
+How Google uses data from sites or apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>App Tracking Transparency.</strong> Shortly after the home screen first appears, and before any ad is requested, the App asks for tracking permission as required by Apple. If you decline, the App works exactly the same; you will simply see non-personalised ads. You can change this at any time in Settings › Privacy &amp; Security › Tracking.</p>
+<p><strong>United Kingdom.</strong> If your device region or App Store country is the United Kingdom, you are always shown non-personalised ads, whatever you choose above.</p>
 
 <h2>5. What we do not do</h2>
 <ul>
 <li>We do not sell your data</li>
+<li>We do not use data for anything other than advertising</li>
 <li>We do not build user profiles, in this App or across apps</li>
 <li>We do not access your contacts, photos, location, health data, microphone or camera</li>
-<li>We do not embed any third-party library</li>
+<li>We do not embed any third-party library other than the Google Mobile Ads SDK</li>
 </ul>
 
 <h2>6. Children</h2>
-<p>The App is rated 4+, contains no unsuitable material and collects no personal data. It is not enrolled in the App Store Kids Category. If you are a parent with questions about how the App handles data, please contact us at the address below.</p>
+<p>The App is rated 4+ and contains no unsuitable material. We collect no personal data, and ads are limited to content suitable for a general audience. It is not enrolled in the App Store Kids Category. If you are a parent with questions about how the App handles data, please contact us at the address below.</p>
 
 <h2>7. Your rights</h2>
 <p>Because we hold none of your data, you retain full control of what is stored on your device:</p>
@@ -80,6 +91,7 @@
 <li>Stop syncing: turn off iCloud access for the App in iOS Settings</li>
 <li>Portability: there is nothing held by us to transfer</li>
 </ul>
+<p>Data collected for advertising is held by Google; you can exercise your rights over it through Google (links in section 4) and stop ad tracking at any time in iOS Settings.</p>
 <p>If you are located in the EU, the UK, or another region granting data subject rights and still need assistance, please contact us.</p>
 
 <h2>8. Data retention</h2>
@@ -92,19 +104,19 @@
 <p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></p>
 
 <div class="note">
-<p><strong>Technical note.</strong> The App’s privacy manifest (PrivacyInfo.xcprivacy) declares one required-reason API only: user defaults (CA92.1), used to store your preferences. Tracking is declared as false and no tracking domains are listed. Sync uses Apple’s CloudKit through SwiftData, writing only to your private database; the App links Apple’s Network framework solely to observe whether the device is online so that the Settings screen can show an honest sync status.</p>
+<p><strong>Technical note.</strong> The App’s privacy manifest (PrivacyInfo.xcprivacy) declares one required-reason API only: user defaults (CA92.1), used to store your preferences. Tracking is declared as false and no tracking domains are listed, because the App itself makes no network requests; the Google Mobile Ads SDK ships with its own privacy manifest declaring the data it collects, and the App Store privacy label combines both. Sync uses Apple’s CloudKit through SwiftData, writing only to your private database; the App uses Apple’s Network framework solely to observe whether the device is online, so that the Settings screen shows an honest sync status and ad buttons are disabled while offline.</p>
 </div>
 </section>
 
 <hr>
 
 <section id="zh">
-<p class="updated">最後更新:2026 年 9 月 9 日 · 適用版本 1.0</p>
+<p class="updated">最後更新:2026 年 10 月 4 日 · 適用版本 1.0</p>
 <p>跳棋 Pace(以下稱「本 App」)由 Chien-Ting Liao(以下稱「我們」)開發與維護。本政策說明本 App 如何處理你的資料。</p>
 
 <h2>一、我們不蒐集的資料</h2>
 <p>本 App 不要求註冊、不需要帳號,也不會取得你的 Apple ID、姓名、電子郵件地址或電話號碼。</p>
-<p>本 App 不含任何分析工具、追蹤機制或第三方開發套件。它唯一產生的網路流量,是把你自己的對局紀錄同步到你自己的 iCloud 帳號,見第三節。</p>
+<p>本 App 不含任何分析工具,自身也不做任何追蹤。唯一的第三方元件是 Google 行動廣告 SDK,用於顯示第四節所述的廣告。除廣告之外,本 App 唯一產生的網路流量,是把你自己的對局紀錄同步到你自己的 iCloud 帳號,見第三節。</p>
 <p>我們沒有伺服器,也沒有任何可以讀取你資料的後台系統。</p>
 
 <h2>二、儲存在你裝置上的資料</h2>
@@ -125,20 +137,31 @@
 <p>你可以隨時在 iOS 系統設定中關閉本 App 的 iCloud 存取權限,本 App 會改以該裝置上的紀錄繼續運作。App 內不另設開關,兩套開關就不會互相矛盾。</p>
 
 <h2>四、廣告與追蹤</h2>
-<p>1.0 版不含任何廣告 SDK,也不顯示第三方廣告。</p>
-<p>本 App 不會透過「追蹤授權(App Tracking Transparency)」詢問你 —— 因為我們不追蹤你,也沒有廣告識別碼可以分享。</p>
-<p>若未來版本加入廣告,我們會在該版本發行前更新本頁面與 App Store 的隱私標籤,並在 App 內告知。</p>
+<p>本 App 免費提供,並顯示由 Google AdMob 提供的廣告:較大螢幕的對局畫面下方有橫幅、回到主頁時偶爾出現全螢幕廣告,以及你可自行選擇觀看、以換取額外悔棋或重來的獎勵廣告。</p>
+<p>Google 及其合作夥伴可能會蒐集下列資料用於投放與衡量廣告成效:</p>
+<ul>
+<li>廣告識別碼(僅在你允許追蹤時)</li>
+<li>裝置資訊(機型、作業系統版本、語言、大致地區)</li>
+<li>廣告互動紀錄(曝光、點擊)</li>
+<li>診斷資料(廣告 SDK 的當機與效能資訊)</li>
+</ul>
+<p>這些資料由 Google 依其自身的隱私權政策處理,我們無法存取。<br>
+Google 的隱私權政策:<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
+Google 合作夥伴網站與 App 資料使用說明:<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>追蹤授權(App Tracking Transparency)。</strong>主頁第一次出現後不久、在請求任何廣告之前,本 App 會依系統規定詢問你是否允許追蹤。若你選擇不允許,你仍然可以正常使用本 App,只是會看到非個人化廣告。你可以隨時在「設定 › 隱私權與安全性 › 追蹤」中變更此選擇。</p>
+<p><strong>英國。</strong>若你的裝置地區或 App Store 國家為英國,無論上述選擇為何,一律只顯示非個人化廣告。</p>
 
 <h2>五、我們不做的事</h2>
 <ul>
 <li>不販售你的資料</li>
+<li>不將資料用於廣告以外的用途</li>
 <li>不建立使用者輪廓,無論是本 App 內或跨 App</li>
 <li>不存取你的通訊錄、相片、定位、健康資料、麥克風或相機</li>
-<li>不嵌入任何第三方程式庫</li>
+<li>除 Google 行動廣告 SDK 外,不嵌入任何第三方程式庫</li>
 </ul>
 
 <h2>六、兒童</h2>
-<p>本 App 分級為 4+,不含不適宜內容,也不蒐集任何個人資料。本 App 未加入 App Store 的兒童類別。若你是家長並對本 App 的資料處理有疑問,歡迎透過下方信箱聯絡我們。</p>
+<p>本 App 分級為 4+,不含不適宜內容。我們不蒐集任何個人資料,廣告也限制為適合所有年齡層的內容。本 App 未加入 App Store 的兒童類別。若你是家長並對本 App 的資料處理有疑問,歡迎透過下方信箱聯絡我們。</p>
 
 <h2>七、你的權利</h2>
 <p>由於我們不持有你的任何資料,你對裝置上的資料擁有完全控制權:</p>
@@ -148,6 +171,7 @@
 <li>停止同步:於 iOS 系統設定關閉本 App 的 iCloud 存取</li>
 <li>可攜性:我們端沒有任何資料需要移轉</li>
 </ul>
+<p>為廣告而蒐集的資料由 Google 持有;你可以透過 Google 行使相關權利(連結見第四節),並可隨時在 iOS 設定中停止廣告追蹤。</p>
 <p>若你位於歐盟、英國或其他賦予資料主體權利的地區,且認為仍有需要協助之處,請透過下方信箱聯絡我們。</p>
 
 <h2>八、資料保留</h2>
@@ -160,7 +184,7 @@
 <p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></p>
 
 <div class="note">
-<p><strong>技術附註。</strong>本 App 的隱私清單(PrivacyInfo.xcprivacy)只宣告一項必要理由 API:使用者預設值(CA92.1),用於儲存你的偏好設定;追蹤宣告為否,且未列出任何追蹤網域。同步透過 SwiftData 使用 Apple 的 CloudKit,只寫入你的私有資料庫;二進位檔連結 Apple 的 Network 框架,僅用於判斷裝置是否連線,好讓設定頁誠實顯示同步狀態。</p>
+<p><strong>技術附註。</strong>本 App 的隱私清單(PrivacyInfo.xcprivacy)只宣告一項必要理由 API:使用者預設值(CA92.1),用於儲存你的偏好設定;追蹤宣告為否,且未列出任何追蹤網域 —— 因為本 App 自身不發出任何網路請求;Google 行動廣告 SDK 自帶隱私清單宣告其蒐集的資料,App Store 的隱私標籤則合併兩者據實申報。同步透過 SwiftData 使用 Apple 的 CloudKit,只寫入你的私有資料庫;本 App 使用 Apple 的 Network 框架,僅用於判斷裝置是否連線,好讓設定頁誠實顯示同步狀態,並在離線時停用廣告按鈕。</p>
 </div>
 </section>
 
