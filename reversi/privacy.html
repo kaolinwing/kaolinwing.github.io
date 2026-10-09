@@ -8,36 +8,49 @@
   :root { --ink:#0e1014; --panel:#171b21; --bone:#f2ede3; --muted:#9aa0a8; --brass:#e0a63e; --line:#2a2f37; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--ink); color:var(--bone);
-         font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang TC","Hiragino Sans",sans-serif; }
+         font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang TC","Hiragino Sans","Apple SD Gothic Neo",sans-serif; }
   main { max-width:720px; margin:0 auto; padding:40px 22px 80px; }
   h1 { font-size:1.6em; margin:0 0 4px; }
   h1 small { display:block; font-size:.55em; color:var(--muted); font-weight:400; }
   h2 { color:var(--brass); font-size:1.1em; margin:2em 0 .5em; }
   p, li { color:#d8d3c8; }
-  .nav { display:flex; gap:14px; margin:18px 0 6px; font-size:.95em; }
+  .nav { display:flex; flex-wrap:wrap; gap:10px 14px; margin:18px 0 6px; font-size:.95em; }
   .nav a { color:var(--brass); text-decoration:none; border:1px solid var(--line);
            padding:6px 14px; border-radius:999px; }
   a { color:var(--brass); word-break:break-all; }
   hr { border:0; border-top:1px solid var(--line); margin:40px 0; }
-  mark { background:#4a3a12; color:#ffd982; padding:0 6px; border-radius:6px; }
   ul { padding-left:1.2em; }
   .updated { color:var(--muted); font-size:.9em; }
+  .summary { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:4px 18px; }
 </style>
 </head>
 <body>
 <main>
 <h1>Reversi Pace<small>Privacy Policy · 隱私權政策</small></h1>
-<nav class="nav"><a href="#en">English</a><a href="#zh">繁體中文</a><a href="#th">ไทย</a><a href="index.html">Support · 支援</a></nav>
+<nav class="nav"><a href="#en">English</a><a href="#zh">繁體中文</a><a href="#th">ไทย</a><a href="#ko">한국어</a><a href="#fr">Français</a><a href="#ja">日本語</a><a href="index.html">Support · 支援</a></nav>
 
 <section id="en">
-<p class="updated">Last updated: 9 October 2026</p>
-<p>Reversi Pace (“the App”) is developed and maintained by Chien-Ting Liao (“we”, “us”). This policy explains how the App handles your data.</p>
+<p class="updated">Last updated: 10 October 2026</p>
+<p>Reversi Pace (“the App”) is developed and maintained by Chien-Ting Liao, an individual developer based in Taiwan (“we”, “us”). This policy explains what data is involved when you use the App, who handles it, and the choices you have. The English version is the original; the other languages are translations for convenience, and the English version prevails if they differ.</p>
 
-<h2>1. What we do not collect</h2>
-<p>The App requires no registration and no account. We do not obtain your Apple ID, name, email address or phone number.</p>
-<p>We operate no servers and have no back-office system capable of reading your personal data.</p>
+<div class="summary">
+<p><strong>In short</strong></p>
+<ul>
+<li>No account, no sign-in. The App itself does not send your data to us.</li>
+<li>Your game records stay on your device and, if you use iCloud, in your own iCloud — we can’t see them.</li>
+<li>The App shows ads from Google. Google receives some device and usage data to show and measure ads. If you don’t allow tracking, you only get non-personalised ads.</li>
+<li>If you email us, we use your message only to reply.</li>
+<li>Questions or requests: <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></li>
+</ul>
+</div>
 
-<h2>2. Data stored on your device</h2>
+<h2>1. Who is responsible</h2>
+<p>The App is provided by Chien-Ting Liao, an individual developer in Taiwan, who is responsible for how the App handles personal data and also acts as its privacy officer — including as Data Protection Officer under Singapore’s PDPA, Privacy Officer under New Zealand’s Privacy Act, the person in charge of the protection of personal information under Québec law, and the chief privacy officer (개인정보 보호책임자) under Korea’s PIPA. Contact: <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>. A postal address is available on request by email.</p>
+
+<h2>2. What the App does not collect</h2>
+<p>The App requires no registration and no account. It does not obtain your Apple ID, name, email address or phone number, and it does not ask for access to your contacts, photos, location or health data. We operate no servers; the App itself sends nothing to us.</p>
+
+<h2>3. Data stored on your device</h2>
 <p>The App stores the following on your device to provide gameplay features:</p>
 <ul>
 <li>Game records: difficulty, result, score, elapsed time, move transcript, undo and retry counts</li>
@@ -45,17 +58,17 @@
 <li>Preferences: interface language, sound settings, tap-to-place mode</li>
 <li>App version and device model identifier (used locally for performance and compatibility handling only)</li>
 </ul>
-<p>This data is stored on your device and, if iCloud sync is on, also in your own iCloud (see §3). You can clear all game records at any time from the Statistics screen; this also removes them from your other devices, while Endgame Puzzles progress and an unfinished game are kept. Deleting the App removes what is stored on this device, but not your iCloud data (see §3).</p>
+<p>This data is stored on your device and, if iCloud sync is on, also in your own iCloud (see §4). You can clear all game records at any time from the Statistics screen; this also removes them from your other devices, while Endgame Puzzles progress and an unfinished game are kept. Deleting the App removes what is stored on this device, but not your iCloud data (see §4).</p>
 
-<h2>3. iCloud sync</h2>
+<h2>4. iCloud sync</h2>
 <p>If you are signed in to iCloud and have allowed the App to use it, your game records, Endgame Puzzles progress and Puzzle Rush best score sync to your own private iCloud storage so that they survive a device change or reinstall. A randomly generated key, used only to detect tampering with your records, is kept in your iCloud Keychain for the same reason; it contains no personal information.</p>
 <p>This data lives in your own iCloud storage, protected by your Apple Account. We cannot read it, modify it, or delete it.</p>
 <p>Deleting the App does not remove this iCloud data. To delete it, go to Settings › [your name] › iCloud › Manage Storage, choose Reversi Pace and delete its data (wording may vary between iOS versions).</p>
 <p>You can turn off iCloud access for the App at any time in iOS Settings.</p>
 
-<h2>4. Advertising</h2>
-<p>The App is free and displays advertising supplied by Google AdMob.</p>
-<p>Google and its partners may collect the following to serve and measure ads, and for related analytics:</p>
+<h2>5. Advertising</h2>
+<p>The App is free and shows ads supplied by Google AdMob, through Google’s software built into the App. That software sends data directly from your device to Google; we do not receive it and cannot access it.</p>
+<p>Google and its partners may collect:</p>
 <ul>
 <li>Device identifiers, including the advertising identifier if you allow tracking</li>
 <li>Approximate location, estimated from your IP address (not GPS)</li>
@@ -64,72 +77,106 @@
 <li>App interaction data related to ads (such as app launches)</li>
 <li>Diagnostic data (crash, performance and other diagnostics)</li>
 </ul>
-<p>This data is handled by Google under its own privacy policy. We cannot access it.<br>
+<p>Purposes: to show ads, limit how often you see the same ad, measure ads, prevent fraud and abuse, and related analytics.</p>
+<p><strong>Your tracking choice (App Tracking Transparency).</strong> iOS asks whether the App may track you. Tracking is off unless you allow it. If you allow it, Google may use your device’s advertising identifier to show you personalised ads based on your activity in other companies’ apps and websites. If you don’t, you will only see non-personalised ads and the game works exactly the same; even then, Google uses device identifiers and similar information to limit how often ads appear, for aggregated ad reporting and to prevent fraud. You can change your choice at any time in Settings › Privacy &amp; Security › Tracking.</p>
+<p><strong>Children and teens.</strong> iOS doesn’t let apps request tracking from child accounts, or from users under 18 by birth year who are signed in with their Apple Account; these users only see non-personalised ads. Ads in the App are limited to content suitable for all ages.</p>
+<p><strong>United Kingdom.</strong> If your device region or App Store country is the United Kingdom, the App always requests non-personalised ads, whatever your tracking choice.</p>
+<p><strong>Report an ad.</strong> If you see an ad that seems inappropriate or not suitable for your age, tell us at <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> — describe the ad and when you saw it. Where the ad shows its own options icon, you can also report it there.</p>
+<p>Google handles this data under its own privacy policy, and commits to protecting data received through its advertising services under that policy and its terms for publishers. We only use third-party services that protect your data at least to the standard described in this policy.<br>
 Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
 How Google uses data from sites or apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
-<p><strong>App Tracking Transparency.</strong> On iOS the App asks for tracking permission as required by Apple. If you decline, the App works exactly the same; you will simply see non-personalised ads. You can change this at any time in Settings › Privacy &amp; Security › Tracking. If you allow tracking, Google may use the advertising identifier to show you personalised ads based on your activity in other companies’ apps and websites.</p>
-<p><strong>United Kingdom.</strong> If your device region or App Store country is the United Kingdom, the App always requests non-personalised ads, whatever your tracking choice.</p>
 
-<h2>5. What we do not do</h2>
+<h2>6. Emails you send us</h2>
+<p>If you contact us, we receive your email address, any name you include and the content of your message. We use them only to reply and to handle your request (including privacy requests), and we share them with no one except our email providers (the domain’s email-forwarding service and Google’s Gmail, which store messages on servers including in the United States). Messages are kept only in a password-protected email account and are not copied elsewhere. We delete support emails within two years after your matter is closed, unless we need them longer to deal with a legal claim.</p>
+
+<h2>7. Legal bases (where the law requires one)</h2>
 <ul>
-<li>We do not sell your personal data</li>
-<li>We do not receive, store or use the advertising data described in §4; it goes directly to Google</li>
-<li>We do not build user profiles (if you allow tracking, Google may — see §4)</li>
-<li>We do not access your contacts, photos, precise location or health data</li>
+<li>Personalised ads: your consent, given through the iOS tracking prompt; you can withdraw it at any time in Settings.</li>
+<li>Non-personalised ads, and Google’s frequency capping, ad measurement and fraud prevention: our legitimate interest in keeping the App free.</li>
+<li>Replying to your emails: your request, and our legitimate interest in responding.</li>
+<li>Game data on your device and in your iCloud: not collected by us; it is kept on your side to provide the App’s features.</li>
 </ul>
 
-<h2>6. Children</h2>
-<p>The App is suitable for all ages, contains no unsuitable material, and does not itself collect personal data. It is not enrolled in the App Store Kids Category. If you are a parent with questions about how the App handles data, please contact us at the address below.</p>
+<h2>8. International transfers</h2>
+<p>We are based in Taiwan. Advertising data goes directly from your device to Google and may be processed in the United States and other countries where Google operates. Support emails are stored by our email providers in the United States and other countries. These countries may have data protection rules different from yours.</p>
 
-<h2>7. Your rights</h2>
-<p>Because we hold none of your personal data, you retain full control of what is stored on your device and in your iCloud:</p>
+<h2>9. What we do not do</h2>
 <ul>
-<li>Access: everything is visible inside the App</li>
-<li>Deletion: clear all game records from the Statistics screen; delete the App to remove the data on this device; delete the App’s iCloud data in iOS Settings (see §3)</li>
-<li>Stop syncing: turn off iCloud access in iOS Settings</li>
-<li>Advertising data: please exercise your rights with Google, as described in their privacy policy</li>
+<li>We do not sell your personal data. (If you allow tracking, Google may use your advertising identifier for advertising across other companies’ apps and websites; some laws, such as certain US state laws, may treat this as “sharing”.)</li>
+<li>We do not build user profiles.</li>
+<li>We do not receive or use the advertising data described in §5.</li>
+<li>Do Not Track: the App is not a web browser and does not respond to “Do Not Track” signals; your tracking choice in iOS (§5) applies instead.</li>
 </ul>
-<p>If you are located in the EU, the UK, or another region granting data subject rights and still need assistance, please contact us.</p>
 
-<h2>8. Data retention</h2>
-<p>Data on your device and in your iCloud is retained until you delete it. We retain nothing, because we operate no servers.</p>
+<h2>10. Children</h2>
+<p>The App is for a general audience: its content suits all ages, but it is not directed at children under 13 and is not in the App Store Kids category. We do not knowingly collect personal data from children. See §5 for how ads work for children and teens. If you are a parent or guardian and believe your child has sent us personal data (for example by email), contact us and we will delete it.</p>
 
-<h2>9. Changes to this policy</h2>
+<h2>11. Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct or delete your personal data, to restrict or object to its processing, to data portability, and to withdraw consent.</p>
+<ul>
+<li>Your game data: you control it directly — view it in the App; delete it from the Statistics screen, by deleting the App, or in iOS Settings for iCloud data (§4); stop syncing by turning off iCloud access for the App.</li>
+<li>Your tracking consent: change it at any time in Settings › Privacy &amp; Security › Tracking.</li>
+<li>Advertising data: we cannot access it; please exercise your rights with Google as described in its privacy policy (we are happy to help you find how).</li>
+<li>Emails you sent us: ask us at <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>.</li>
+</ul>
+<p>We reply within 30 days; where the law allows, we may extend this by up to 30 more days and will tell you why. We may need to confirm your identity. If you are in the United Kingdom, we will acknowledge a complaint within 30 days. You may also complain to your local data protection authority — for example the UK Information Commissioner’s Office (<a href="https://ico.org.uk">ico.org.uk</a>) or the equivalent authority in your country.</p>
+
+<h2>12. Data retention</h2>
+<ul>
+<li>On your device and in your iCloud: until you delete it.</li>
+<li>Support emails: deleted within two years after your matter is closed (§6).</li>
+<li>Advertising data: retained by Google under its own policy.</li>
+</ul>
+
+<h2>13. Changes to this policy</h2>
 <p>If this policy changes, we will update this page and revise the “last updated” date. Material changes will also be noted in the release notes of the next App update.</p>
 
-<h2>10. Contact</h2>
-<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></p>
+<h2>14. Contact</h2>
+<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> (postal address available on request)</p>
 </section>
 
 <hr>
 
-<section id="zh">
-<p class="updated">最後更新:2026 年 10 月 9 日</p>
-<p>黑白棋 Pace(以下稱「本 App」)由 Chien-Ting Liao(以下稱「我們」)開發與維護。本政策說明本 App 如何處理你的資料。</p>
+<section id="zh" lang="zh-Hant">
+<p class="updated">最後更新:2026 年 10 月 10 日</p>
+<p>黑白棋 Pace(以下稱「本 App」)由住在台灣的個人開發者 Chien-Ting Liao(以下稱「我們」)開發與維護。本政策說明使用本 App 時涉及哪些資料、由誰處理,以及你有哪些選擇。本政策以英文版為原文,其他語言版本為方便閱讀而提供,內容不一致時以英文版為準。</p>
 
-<h2>一、我們不蒐集的資料</h2>
-<p>本 App 不要求註冊、不需要帳號,也不會取得你的 Apple ID、姓名、電子郵件地址或電話號碼。</p>
-<p>我們沒有伺服器,也沒有任何可以讀取你個人資料的後台系統。</p>
+<div class="summary">
+<p><strong>重點摘要</strong></p>
+<ul>
+<li>不需要帳號,也不用登入。本 App 本身不會把你的資料傳給我們。</li>
+<li>你的對局紀錄存在你的裝置上;若使用 iCloud,則存在你自己的 iCloud —— 我們看不到。</li>
+<li>本 App 會顯示 Google 的廣告。Google 會收到部分裝置與使用資料,用來顯示與衡量廣告。若你不允許追蹤,就只會看到非個人化廣告。</li>
+<li>你寫信給我們時,我們只會用你的來信回覆你。</li>
+<li>有問題或要提出請求:<a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></li>
+</ul>
+</div>
 
-<h2>二、儲存在你裝置上的資料</h2>
+<h2>一、誰負責</h2>
+<p>本 App 由住在台灣的個人開發者 Chien-Ting Liao 提供,負責本 App 的個人資料處理,並擔任隱私負責人(包括新加坡個人資料保護法的資料保護長、紐西蘭隱私法的 Privacy Officer、魁北克法律的個人資料保護負責人,以及韓國個人資訊保護法的個人資訊保護負責人)。聯絡方式:<a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>。郵寄地址可來信索取。</p>
+
+<h2>二、本 App 不蒐集的資料</h2>
+<p>本 App 不要求註冊、不需要帳號,不會取得你的 Apple ID、姓名、電子郵件地址或電話號碼,也不會要求存取你的通訊錄、相片、位置或健康資料。我們沒有伺服器;本 App 本身不會傳送任何資料給我們。</p>
+
+<h2>三、儲存在你裝置上的資料</h2>
 <p>本 App 會在你的裝置上儲存下列資料,用於提供遊戲功能:</p>
 <ul>
 <li>對局紀錄:難度、勝負、得分、用時、棋譜、悔棋與重來次數</li>
 <li>殘局解謎進度與限時連解最佳紀錄</li>
-<li>偏好設定:介面語言、音效開關、落子方式</li>
+<li>偏好設定:介面語言、音效設定、落子方式</li>
 <li>App 版本與裝置機型代碼(僅用於本機的效能與相容性判斷)</li>
 </ul>
-<p>這些資料存放在你的裝置上;若開啟 iCloud 同步,也會存放在你自己的 iCloud(見第三節)。你可以隨時在「戰績統計」畫面清除全部對局紀錄,其他裝置上的紀錄也會一併刪除;殘局解謎進度與進行中的對局則會保留。刪除本 App 只會移除這台裝置上的資料,不會刪除你 iCloud 中的資料(見第三節)。</p>
+<p>這些資料存放在你的裝置上;若開啟 iCloud 同步,也會存放在你自己的 iCloud(見第四節)。你可以隨時在「戰績統計」畫面清除全部對局紀錄,其他裝置上的紀錄也會一併刪除;殘局解謎進度與進行中的對局則會保留。刪除本 App 只會移除這台裝置上的資料,不會刪除你 iCloud 中的資料(見第四節)。</p>
 
-<h2>三、iCloud 同步</h2>
+<h2>四、iCloud 同步</h2>
 <p>若你已登入 iCloud 並允許本 App 使用,對局紀錄、殘局解謎進度與限時連解最佳紀錄會同步到你個人的 iCloud 私有空間,讓你在更換裝置或重新安裝後能取回。另有一把隨機產生、僅用於偵測紀錄是否遭竄改的金鑰,基於同樣理由存放在你的 iCloud 鑰匙圈中,不含任何個人資訊。</p>
 <p>這份資料儲存在你自己的 iCloud 空間,受你的 Apple 帳號保護。我們無法讀取、無法修改、也無法刪除其中的內容。</p>
 <p>刪除本 App 不會移除這些 iCloud 資料。若要刪除,請前往「設定 › [你的名字] › iCloud › 管理儲存空間」,選擇黑白棋 Pace 並刪除其資料(各 iOS 版本的字樣可能略有不同)。</p>
 <p>你可以隨時在 iOS 系統設定中關閉本 App 的 iCloud 存取權限。</p>
 
-<h2>四、廣告</h2>
-<p>本 App 免費提供,並顯示由 Google AdMob 提供的廣告。</p>
-<p>Google 及其合作夥伴可能會蒐集下列資料,用於投放與衡量廣告及相關分析:</p>
+<h2>五、廣告</h2>
+<p>本 App 免費提供,並透過內建的 Google 軟體顯示 Google AdMob 提供的廣告。這套軟體會把資料從你的裝置直接傳給 Google;我們收不到,也無法存取。</p>
+<p>Google 及其合作夥伴可能蒐集:</p>
 <ul>
 <li>裝置識別碼(若你允許追蹤,也包含廣告識別碼)</li>
 <li>大致位置(依 IP 位址推估,非 GPS 定位)</li>
@@ -138,53 +185,88 @@ How Google uses data from sites or apps that use its services: <a href="https://
 <li>與廣告相關的 App 互動資料(例如開啟 App)</li>
 <li>診斷資料(當機、效能及其他診斷資訊)</li>
 </ul>
-<p>這些資料由 Google 依其自身的隱私權政策處理,我們無法存取。<br>
+<p>用途:顯示廣告、限制同一則廣告的出現次數、衡量廣告成效、防止詐欺與濫用,以及相關分析。</p>
+<p><strong>你的追蹤選擇(App Tracking Transparency)。</strong>iOS 會詢問你是否允許本 App 追蹤。除非你允許,否則追蹤不會啟用。若你允許,Google 可能使用裝置的廣告識別碼,依你在其他公司 App 與網站上的活動顯示個人化廣告。若你不允許,你只會看到非個人化廣告,遊戲完全不受影響;即使如此,Google 仍會使用裝置識別碼等資訊來限制廣告出現次數、產生彙總報表與防止詐欺。你可以隨時在「設定 › 隱私權與安全性 › 追蹤」中變更。</p>
+<p><strong>兒童與青少年。</strong>對兒童帳號,以及依出生年份未滿 18 歲、以 Apple 帳號登入的使用者,iOS 不允許 App 提出追蹤請求,這些使用者只會看到非個人化廣告。本 App 的廣告限於適合所有年齡的內容。</p>
+<p><strong>英國。</strong>若你的裝置地區或 App Store 國家為英國,無論你是否允許追蹤,本 App 一律只請求非個人化廣告。</p>
+<p><strong>回報廣告。</strong>若你看到看起來不適當或不適合你年齡的廣告,請寫信到 <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> 告訴我們,並描述廣告內容與出現時間。廣告若附有選項圖示,也可以從那裡回報。</p>
+<p>Google 依其自身的隱私權政策處理這些資料,並依該政策及與發布商的條款,承諾保護經由其廣告服務取得的資料。我們只使用對你的資料提供不低於本政策所述保護程度的第三方服務。<br>
 Google 的隱私權政策:<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
 Google 合作夥伴網站與 App 資料使用說明:<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
-<p><strong>追蹤授權(App Tracking Transparency)。</strong>在 iOS 上,本 App 會依系統規定詢問你是否允許追蹤。若你選擇不允許,你仍然可以正常使用本 App,只是會看到非個人化廣告。你可以隨時在「設定 › 隱私權與安全性 › 追蹤」中變更此選擇。若你允許追蹤,Google 可能使用廣告識別碼,依你在其他公司 App 與網站上的活動顯示個人化廣告。</p>
-<p><strong>英國。</strong>若你的裝置地區或 App Store 國家為英國,無論你是否允許追蹤,本 App 一律只請求非個人化廣告。</p>
 
-<h2>五、我們不做的事</h2>
+<h2>六、你寄給我們的電子郵件</h2>
+<p>若你聯絡我們,我們會收到你的電子郵件地址、你在信中提供的姓名,以及來信內容。我們只用這些資料回覆你、處理你的請求(包括隱私相關請求),除了我們的電子郵件服務供應商(網域信件轉寄服務及 Google 的 Gmail,其伺服器包括位於美國者)之外,不會提供給任何人。這些信件只存放在設有密碼保護的電子郵件帳號中,不另行複製。我們會在你的事情處理完畢後兩年內刪除支援信件,除非因法律主張而需要保留更久。</p>
+
+<h2>七、法律依據(依適用的法律)</h2>
 <ul>
-<li>不販售你的個人資料</li>
-<li>不接收、不儲存、也不使用第四節所列的廣告資料;這些資料直接由 Google 處理</li>
-<li>不建立使用者輪廓(若你允許追蹤,Google 可能會這麼做,見第四節)</li>
-<li>不取用你的通訊錄、相片、精確定位或健康資料</li>
+<li>個人化廣告:你透過 iOS 追蹤詢問給予的同意;你可隨時在「設定」中撤回。</li>
+<li>非個人化廣告,以及 Google 的廣告次數限制、成效衡量與防詐:我們維持本 App 免費的正當利益。</li>
+<li>回覆你的來信:你的請求,以及我們回覆的正當利益。</li>
+<li>你裝置與 iCloud 中的遊戲資料:我們不蒐集;這些資料是為了提供遊戲功能而存放在你這一端。</li>
 </ul>
 
-<h2>六、兒童</h2>
-<p>本 App 適合所有年齡層,不含不適宜內容,也不主動蒐集任何個人資料。本 App 未加入 App Store 的兒童類別。若你是家長並對本 App 的資料處理有疑問,歡迎透過下方信箱聯絡我們。</p>
+<h2>八、跨境傳輸</h2>
+<p>我們位於台灣。廣告資料由你的裝置直接傳給 Google,可能在美國及 Google 營運的其他國家處理。支援信件由我們的電子郵件服務供應商存放於美國及其他國家。這些國家的個人資料保護規定可能與你所在地不同。</p>
 
-<h2>七、你的權利</h2>
-<p>由於我們不持有你的個人資料,你對本機與 iCloud 中的資料擁有完全控制權:</p>
+<h2>九、我們不做的事</h2>
 <ul>
-<li>查看:所有資料都在 App 內可見</li>
-<li>刪除:於「戰績統計」清除全部對局紀錄;刪除本 App 可移除本機資料;iCloud 中的資料請於 iOS 設定刪除(見第三節)</li>
-<li>停止同步:於 iOS 系統設定關閉 iCloud 存取</li>
-<li>關於廣告資料:請向 Google 行使你的權利,方式見其隱私權政策</li>
+<li>不販售你的個人資料。(若你允許追蹤,Google 可能使用你的廣告識別碼,在其他公司的 App 與網站投放廣告;部分法律,例如美國某些州法,可能將此視為「分享」。)</li>
+<li>不建立使用者輪廓。</li>
+<li>不接收、也不使用第五節所列的廣告資料。</li>
+<li>「請勿追蹤」(Do Not Track):本 App 不是網頁瀏覽器,不回應「請勿追蹤」訊號;以你在 iOS 的追蹤選擇(第五節)為準。</li>
 </ul>
-<p>若你位於歐盟、英國或其他賦予資料主體權利的地區,且認為仍有需要協助之處,請透過下方信箱聯絡我們。</p>
 
-<h2>八、資料保留</h2>
-<p>本機與 iCloud 中的資料會保留至你主動刪除為止。我們端不保留任何資料,因為我們沒有伺服器。</p>
+<h2>十、兒童</h2>
+<p>本 App 適合一般大眾:內容適合所有年齡,但並非以 13 歲以下兒童為對象,也未加入 App Store 的兒童類別。我們不會刻意蒐集兒童的個人資料。兒童與青少年的廣告處理方式見第五節。若你是家長或監護人,並認為你的孩子曾把個人資料寄給我們(例如透過電子郵件),請與我們聯絡,我們會將其刪除。</p>
 
-<h2>九、政策變更</h2>
+<h2>十一、你的權利</h2>
+<p>依你所在地的法律,你可能有權請求查詢或閱覽、製給複製本、補充或更正、刪除、限制或停止蒐集處理利用、反對處理、資料可攜,以及撤回同意。</p>
+<ul>
+<li>你的遊戲資料:由你直接掌控 —— 在 App 內查看;於「戰績統計」畫面、刪除本 App,或於 iOS 設定刪除 iCloud 資料(第四節);關閉本 App 的 iCloud 存取即可停止同步。</li>
+<li>你的追蹤同意:隨時在「設定 › 隱私權與安全性 › 追蹤」變更。</li>
+<li>廣告資料:我們無法存取;請依 Google 隱私權政策所述方式向 Google 行使權利(我們樂意協助你找到方法)。</li>
+<li>你寄給我們的信件:請寫信到 <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>。</li>
+</ul>
+<p>我們會在 30 日內回覆;在法律允許時,得再延長最多 30 日並告知理由。我們可能需要確認你的身分。若你在英國,我們會在 30 日內確認收到你的申訴。你也可以向所在地的資料保護主管機關申訴,例如英國資訊專員辦公室(<a href="https://ico.org.uk">ico.org.uk</a>)或你所在國家的相應機關。</p>
+
+<h2>十二、資料保留</h2>
+<ul>
+<li>你的裝置與 iCloud 中的資料:保留至你刪除為止。</li>
+<li>支援信件:事情處理完畢後兩年內刪除(第六節)。</li>
+<li>廣告資料:由 Google 依其政策保留。</li>
+</ul>
+
+<h2>十三、政策變更</h2>
 <p>本政策如有修改,我們會更新本頁面並修改最後更新日期。重大變更也會在下一版 App 的版本說明中告知。</p>
 
-<h2>十、聯絡我們</h2>
-<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></p>
+<h2>十四、聯絡我們</h2>
+<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>(郵寄地址可來信索取)</p>
 </section>
+
 <hr>
 
 <section id="th" lang="th">
-<p class="updated">อัปเดตล่าสุด: 9 ตุลาคม 2026 · <em>ฉบับภาษาไทยนี้แปลจากต้นฉบับภาษาอังกฤษเพื่อความสะดวก หากมีข้อความใดขัดแย้งกัน ให้ยึดฉบับภาษาอังกฤษเป็นหลัก</em></p>
-<p>Reversi Pace (“แอป”) พัฒนาและดูแลโดย Chien-Ting Liao (“เรา”) นโยบายนี้อธิบายว่าแอปจัดการข้อมูลของคุณอย่างไร</p>
+<p class="updated">อัปเดตล่าสุด: 10 ตุลาคม 2026 · <em>ฉบับภาษาไทยนี้แปลจากต้นฉบับภาษาอังกฤษเพื่อความสะดวก หากมีข้อความใดขัดแย้งกัน ให้ยึดฉบับภาษาอังกฤษเป็นหลัก</em></p>
+<p>Reversi Pace (“แอป”) พัฒนาและดูแลโดย Chien-Ting Liao นักพัฒนาอิสระในไต้หวัน (“เรา”) นโยบายนี้อธิบายว่าเมื่อคุณใช้แอปมีข้อมูลใดเกี่ยวข้อง ใครเป็นผู้จัดการ และคุณมีทางเลือกอะไรบ้าง</p>
 
-<h2>1. สิ่งที่เราไม่เก็บ</h2>
-<p>แอปไม่ต้องลงทะเบียนและไม่ต้องมีบัญชี เราไม่ได้รับ Apple ID ชื่อ อีเมล หรือหมายเลขโทรศัพท์ของคุณ</p>
-<p>เราไม่มีเซิร์ฟเวอร์และไม่มีระบบหลังบ้านใด ๆ ที่สามารถอ่านข้อมูลส่วนบุคคลของคุณได้</p>
+<div class="summary">
+<p><strong>สรุปสั้น ๆ</strong></p>
+<ul>
+<li>ไม่ต้องมีบัญชีและไม่ต้องลงชื่อเข้าใช้ ตัวแอปเองไม่ส่งข้อมูลของคุณมาให้เรา</li>
+<li>บันทึกเกมของคุณอยู่ในอุปกรณ์ของคุณ และหากใช้ iCloud ก็อยู่ใน iCloud ของคุณเอง — เรามองไม่เห็นข้อมูลนี้</li>
+<li>แอปแสดงโฆษณาจาก Google ซึ่งได้รับข้อมูลอุปกรณ์และการใช้งานบางส่วนเพื่อแสดงและวัดผลโฆษณา หากคุณไม่อนุญาตให้ติดตาม คุณจะเห็นเฉพาะโฆษณาแบบไม่ปรับตามบุคคล</li>
+<li>หากคุณส่งอีเมลถึงเรา เราจะใช้ข้อความของคุณเพื่อตอบกลับเท่านั้น</li>
+<li>คำถามหรือคำขอ: <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></li>
+</ul>
+</div>
 
-<h2>2. ข้อมูลที่เก็บไว้ในอุปกรณ์ของคุณ</h2>
+<h2>1. ผู้รับผิดชอบ</h2>
+<p>แอปนี้ให้บริการโดย Chien-Ting Liao นักพัฒนาอิสระในไต้หวัน ซึ่งเป็นผู้รับผิดชอบการจัดการข้อมูลส่วนบุคคลของแอป และทำหน้าที่เป็นผู้ดูแลความเป็นส่วนตัวด้วย (รวมถึงในฐานะเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคลตาม PDPA ของสิงคโปร์ Privacy Officer ตามกฎหมายความเป็นส่วนตัวของนิวซีแลนด์ ผู้รับผิดชอบการคุ้มครองข้อมูลส่วนบุคคลตามกฎหมายของควิเบก และผู้รับผิดชอบการคุ้มครองข้อมูลส่วนบุคคลตาม PIPA ของเกาหลี) ติดต่อ: <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> ขอที่อยู่ทางไปรษณีย์ได้ทางอีเมล</p>
+
+<h2>2. สิ่งที่แอปไม่เก็บ</h2>
+<p>แอปไม่ต้องลงทะเบียนและไม่ต้องมีบัญชี ไม่ได้รับ Apple ID ชื่อ อีเมล หรือหมายเลขโทรศัพท์ของคุณ และไม่ขอเข้าถึงรายชื่อผู้ติดต่อ รูปภาพ ตำแหน่งที่ตั้ง หรือข้อมูลสุขภาพของคุณ เราไม่มีเซิร์ฟเวอร์ ตัวแอปเองไม่ส่งสิ่งใดมาให้เรา</p>
+
+<h2>3. ข้อมูลที่เก็บไว้ในอุปกรณ์ของคุณ</h2>
 <p>แอปเก็บข้อมูลต่อไปนี้ไว้ในอุปกรณ์ของคุณเพื่อให้ฟีเจอร์ของเกมทำงานได้:</p>
 <ul>
 <li>บันทึกเกม: ระดับความยาก ผลลัพธ์ คะแนน เวลาที่ใช้ บันทึกการเดิน จำนวนครั้งที่ย้อนตาและลองใหม่</li>
@@ -192,17 +274,17 @@ Google 合作夥伴網站與 App 資料使用說明:<a href="https://policies.go
 <li>การตั้งค่า: ภาษาของอินเทอร์เฟซ การตั้งค่าเสียง โหมดแตะเพื่อวาง</li>
 <li>เวอร์ชันของแอปและรหัสรุ่นอุปกรณ์ (ใช้ภายในเครื่องเพื่อจัดการประสิทธิภาพและความเข้ากันได้เท่านั้น)</li>
 </ul>
-<p>ข้อมูลนี้เก็บอยู่ในอุปกรณ์ของคุณ และหากเปิดการซิงค์ iCloud ก็จะเก็บอยู่ใน iCloud ของคุณเองด้วย (ดูข้อ 3) คุณล้างบันทึกเกมทั้งหมดได้ทุกเมื่อจากหน้าสถิติ ซึ่งจะลบบันทึกในอุปกรณ์อื่นของคุณด้วย ส่วนความคืบหน้าของปริศนาปลายกระดานและเกมที่ยังเล่นไม่จบจะยังคงอยู่ การลบแอปจะลบเฉพาะข้อมูลในอุปกรณ์เครื่องนี้ แต่ไม่ลบข้อมูลใน iCloud ของคุณ (ดูข้อ 3)</p>
+<p>ข้อมูลนี้เก็บอยู่ในอุปกรณ์ของคุณ และหากเปิดการซิงค์ iCloud ก็จะเก็บอยู่ใน iCloud ของคุณเองด้วย (ดูข้อ 4) คุณล้างบันทึกเกมทั้งหมดได้ทุกเมื่อจากหน้าสถิติ ซึ่งจะลบบันทึกในอุปกรณ์อื่นของคุณด้วย ส่วนความคืบหน้าของปริศนาปลายกระดานและเกมที่ยังเล่นไม่จบจะยังคงอยู่ การลบแอปจะลบเฉพาะข้อมูลในอุปกรณ์เครื่องนี้ แต่ไม่ลบข้อมูลใน iCloud ของคุณ (ดูข้อ 4)</p>
 
-<h2>3. การซิงค์ iCloud</h2>
+<h2>4. การซิงค์ iCloud</h2>
 <p>หากคุณลงชื่อเข้าใช้ iCloud และอนุญาตให้แอปใช้งาน บันทึกเกม ความคืบหน้าของปริศนาปลายกระดาน และคะแนนสูงสุดของโจทย์จับเวลาจะซิงค์ไปยังพื้นที่ iCloud ส่วนตัวของคุณเอง เพื่อให้ยังอยู่เมื่อเปลี่ยนอุปกรณ์หรือติดตั้งใหม่ นอกจากนี้ยังมีคีย์ที่สร้างขึ้นแบบสุ่ม ซึ่งใช้เพื่อตรวจจับการแก้ไขบันทึกเท่านั้น เก็บไว้ในพวงกุญแจ iCloud ของคุณด้วยเหตุผลเดียวกัน คีย์นี้ไม่มีข้อมูลส่วนบุคคลใด ๆ</p>
 <p>ข้อมูลนี้อยู่ในพื้นที่ iCloud ของคุณเอง ซึ่งได้รับการปกป้องด้วยบัญชี Apple ของคุณ เราไม่สามารถอ่าน แก้ไข หรือลบข้อมูลนี้ได้</p>
 <p>การลบแอปจะไม่ลบข้อมูลใน iCloud นี้ หากต้องการลบ ให้ไปที่ การตั้งค่า › [ชื่อของคุณ] › iCloud › จัดการพื้นที่จัดเก็บ เลือก Reversi Pace แล้วลบข้อมูล (ชื่อเมนูอาจต่างกันเล็กน้อยในแต่ละเวอร์ชันของ iOS)</p>
 <p>คุณปิดการเข้าถึง iCloud ของแอปได้ทุกเมื่อในการตั้งค่า iOS</p>
 
-<h2>4. โฆษณา</h2>
-<p>แอปนี้ให้ใช้ฟรีและแสดงโฆษณาที่จัดหาโดย Google AdMob</p>
-<p>Google และพันธมิตรอาจเก็บข้อมูลต่อไปนี้เพื่อแสดงและวัดผลโฆษณา รวมถึงการวิเคราะห์ที่เกี่ยวข้อง:</p>
+<h2>5. โฆษณา</h2>
+<p>แอปนี้ให้ใช้ฟรีและแสดงโฆษณาจาก Google AdMob ผ่านซอฟต์แวร์ของ Google ที่ติดตั้งอยู่ในแอป ซอฟต์แวร์นี้ส่งข้อมูลจากอุปกรณ์ของคุณไปยัง Google โดยตรง เราไม่ได้รับและไม่สามารถเข้าถึงข้อมูลนี้</p>
+<p>Google และพันธมิตรอาจเก็บข้อมูลต่อไปนี้:</p>
 <ul>
 <li>ตัวระบุอุปกรณ์ รวมถึงตัวระบุสำหรับโฆษณาหากคุณอนุญาตให้ติดตาม</li>
 <li>ตำแหน่งโดยประมาณ ซึ่งประเมินจากที่อยู่ IP (ไม่ใช่ GPS)</li>
@@ -211,41 +293,390 @@ Google 合作夥伴網站與 App 資料使用說明:<a href="https://policies.go
 <li>ข้อมูลการใช้งานแอปที่เกี่ยวกับโฆษณา (เช่น การเปิดแอป)</li>
 <li>ข้อมูลการวินิจฉัย (การขัดข้อง ประสิทธิภาพ และการวินิจฉัยอื่น ๆ)</li>
 </ul>
-<p>ข้อมูลนี้ Google เป็นผู้จัดการภายใต้นโยบายความเป็นส่วนตัวของ Google เอง เราไม่สามารถเข้าถึงได้<br>
+<p>วัตถุประสงค์: เพื่อแสดงโฆษณา จำกัดจำนวนครั้งที่คุณเห็นโฆษณาเดิม วัดผลโฆษณา ป้องกันการฉ้อโกงและการใช้งานในทางที่ผิด และการวิเคราะห์ที่เกี่ยวข้อง</p>
+<p><strong>การเลือกเรื่องการติดตาม (App Tracking Transparency)</strong> iOS จะถามว่าคุณอนุญาตให้แอปติดตามหรือไม่ การติดตามจะไม่เปิดใช้เว้นแต่คุณอนุญาต หากคุณอนุญาต Google อาจใช้ตัวระบุสำหรับโฆษณาของอุปกรณ์เพื่อแสดงโฆษณาที่ปรับตามบุคคล โดยอิงจากกิจกรรมของคุณในแอปและเว็บไซต์ของบริษัทอื่น หากคุณไม่อนุญาต คุณจะเห็นเฉพาะโฆษณาแบบไม่ปรับตามบุคคลและยังเล่นเกมได้เหมือนเดิมทุกประการ แม้ในกรณีนี้ Google ยังใช้ตัวระบุอุปกรณ์และข้อมูลที่คล้ายกันเพื่อจำกัดความถี่ของโฆษณา จัดทำรายงานโฆษณาแบบรวม และป้องกันการฉ้อโกง คุณเปลี่ยนตัวเลือกได้ทุกเมื่อที่ การตั้งค่า › ความเป็นส่วนตัวและความปลอดภัย › การติดตาม</p>
+<p><strong>เด็กและวัยรุ่น</strong> iOS ไม่อนุญาตให้แอปขอการติดตามจากบัญชีเด็ก หรือจากผู้ใช้ที่อายุต่ำกว่า 18 ปีตามปีเกิดซึ่งลงชื่อเข้าใช้ด้วยบัญชี Apple ผู้ใช้กลุ่มนี้จะเห็นเฉพาะโฆษณาแบบไม่ปรับตามบุคคล โฆษณาในแอปจำกัดเฉพาะเนื้อหาที่เหมาะสมกับทุกวัย</p>
+<p><strong>สหราชอาณาจักร</strong> หากภูมิภาคของอุปกรณ์หรือประเทศของ App Store ของคุณเป็นสหราชอาณาจักร แอปจะขอเฉพาะโฆษณาแบบไม่ปรับตามบุคคลเสมอ ไม่ว่าคุณจะเลือกเรื่องการติดตามอย่างไร</p>
+<p><strong>รายงานโฆษณา</strong> หากคุณเห็นโฆษณาที่ดูไม่เหมาะสมหรือไม่เหมาะกับวัยของคุณ โปรดแจ้งเราที่ <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> พร้อมอธิบายโฆษณาและเวลาที่เห็น หากโฆษณามีไอคอนตัวเลือกของตัวเอง คุณสามารถรายงานจากตรงนั้นได้ด้วย</p>
+<p>Google จัดการข้อมูลนี้ภายใต้นโยบายความเป็นส่วนตัวของ Google และให้คำมั่นว่าจะปกป้องข้อมูลที่ได้รับผ่านบริการโฆษณาตามนโยบายดังกล่าวและข้อกำหนดที่มีต่อผู้เผยแพร่ เราใช้เฉพาะบริการของบุคคลที่สามที่ปกป้องข้อมูลของคุณในระดับไม่ต่ำกว่าที่ระบุในนโยบายนี้<br>
 นโยบายความเป็นส่วนตัวของ Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
 Google ใช้ข้อมูลจากเว็บไซต์หรือแอปที่ใช้บริการของ Google อย่างไร: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
-<p><strong>App Tracking Transparency</strong> บน iOS แอปจะขออนุญาตติดตามตามที่ Apple กำหนด หากคุณปฏิเสธ แอปยังทำงานเหมือนเดิมทุกประการ เพียงแต่คุณจะเห็นโฆษณาแบบไม่ปรับตามบุคคล คุณเปลี่ยนการตั้งค่านี้ได้ทุกเมื่อที่ การตั้งค่า › ความเป็นส่วนตัวและความปลอดภัย › การติดตาม หากคุณอนุญาตให้ติดตาม Google อาจใช้ตัวระบุสำหรับโฆษณาเพื่อแสดงโฆษณาที่ปรับตามบุคคล โดยอิงจากกิจกรรมของคุณในแอปและเว็บไซต์ของบริษัทอื่น</p>
-<p><strong>สหราชอาณาจักร</strong> หากภูมิภาคของอุปกรณ์หรือประเทศของ App Store ของคุณเป็นสหราชอาณาจักร แอปจะขอเฉพาะโฆษณาแบบไม่ปรับตามบุคคลเสมอ ไม่ว่าคุณจะเลือกเรื่องการติดตามอย่างไร</p>
 
-<h2>5. สิ่งที่เราไม่ทำ</h2>
+<h2>6. อีเมลที่คุณส่งถึงเรา</h2>
+<p>หากคุณติดต่อเรา เราจะได้รับอีเมลของคุณ ชื่อที่คุณระบุ (ถ้ามี) และเนื้อหาข้อความ เราใช้ข้อมูลเหล่านี้เพื่อตอบกลับและดำเนินการตามคำขอของคุณ (รวมถึงคำขอเกี่ยวกับความเป็นส่วนตัว) เท่านั้น และไม่เปิดเผยให้ผู้ใดนอกจากผู้ให้บริการอีเมลของเรา (บริการส่งต่ออีเมลของโดเมนและ Gmail ของ Google ซึ่งจัดเก็บข้อความบนเซิร์ฟเวอร์ รวมถึงในสหรัฐอเมริกา) ข้อความเหล่านี้เก็บอยู่ในบัญชีอีเมลที่มีรหัสผ่านป้องกันเท่านั้นและไม่ถูกคัดลอกไปที่อื่น เราจะลบอีเมลสนับสนุนภายในสองปีหลังจากเรื่องของคุณเสร็จสิ้น เว้นแต่จำเป็นต้องเก็บนานกว่านั้นเพื่อการเรียกร้องทางกฎหมาย</p>
+
+<h2>7. ฐานทางกฎหมาย (เมื่อกฎหมายกำหนด)</h2>
 <ul>
-<li>เราไม่ขายข้อมูลส่วนบุคคลของคุณ</li>
-<li>เราไม่ได้รับ ไม่เก็บ และไม่ใช้ข้อมูลโฆษณาที่ระบุในข้อ 4 ข้อมูลเหล่านี้ส่งตรงไปยัง Google</li>
-<li>เราไม่สร้างโปรไฟล์ผู้ใช้ (หากคุณอนุญาตให้ติดตาม Google อาจทำเช่นนั้นได้ ดูข้อ 4)</li>
-<li>เราไม่เข้าถึงรายชื่อผู้ติดต่อ รูปภาพ ตำแหน่งที่ตั้งที่แม่นยำ หรือข้อมูลสุขภาพของคุณ</li>
+<li>โฆษณาที่ปรับตามบุคคล: ความยินยอมของคุณผ่านการถามเรื่องการติดตามของ iOS ซึ่งคุณถอนได้ทุกเมื่อในการตั้งค่า</li>
+<li>โฆษณาแบบไม่ปรับตามบุคคล รวมถึงการจำกัดความถี่ การวัดผล และการป้องกันการฉ้อโกงโดย Google: ประโยชน์โดยชอบด้วยกฎหมายของเราในการให้แอปใช้ได้ฟรี</li>
+<li>การตอบอีเมลของคุณ: คำขอของคุณ และประโยชน์โดยชอบด้วยกฎหมายของเราในการตอบกลับ</li>
+<li>ข้อมูลเกมในอุปกรณ์และ iCloud ของคุณ: เราไม่ได้เก็บ ข้อมูลนี้ถูกเก็บไว้ฝั่งคุณเพื่อให้แอปทำงานได้</li>
 </ul>
 
-<h2>6. เด็ก</h2>
-<p>แอปเหมาะสำหรับทุกวัย ไม่มีเนื้อหาที่ไม่เหมาะสม และตัวแอปเองไม่เก็บข้อมูลส่วนบุคคล แอปไม่ได้อยู่ในหมวดหมู่สำหรับเด็กของ App Store หากคุณเป็นผู้ปกครองและมีคำถามเกี่ยวกับการจัดการข้อมูลของแอป โปรดติดต่อเราตามที่อยู่ด้านล่าง</p>
+<h2>8. การโอนข้อมูลไปต่างประเทศ</h2>
+<p>เราอยู่ในไต้หวัน ข้อมูลโฆษณาส่งจากอุปกรณ์ของคุณไปยัง Google โดยตรง และอาจถูกประมวลผลในสหรัฐอเมริกาและประเทศอื่นที่ Google ดำเนินงาน อีเมลสนับสนุนจัดเก็บโดยผู้ให้บริการอีเมลของเราในสหรัฐอเมริกาและประเทศอื่น ประเทศเหล่านี้อาจมีกฎการคุ้มครองข้อมูลที่ต่างจากประเทศของคุณ</p>
 
-<h2>7. สิทธิของคุณ</h2>
-<p>เนื่องจากเราไม่ได้ถือครองข้อมูลส่วนบุคคลของคุณ คุณจึงควบคุมสิ่งที่เก็บอยู่ในอุปกรณ์และใน iCloud ของคุณได้อย่างเต็มที่:</p>
+<h2>9. สิ่งที่เราไม่ทำ</h2>
 <ul>
-<li>การเข้าถึง: ทุกอย่างดูได้ภายในแอป</li>
-<li>การลบ: ล้างบันทึกเกมทั้งหมดจากหน้าสถิติ ลบแอปเพื่อลบข้อมูลในอุปกรณ์เครื่องนี้ และลบข้อมูล iCloud ของแอปในการตั้งค่า iOS (ดูข้อ 3)</li>
-<li>หยุดซิงค์: ปิดการเข้าถึง iCloud ในการตั้งค่า iOS</li>
-<li>ข้อมูลโฆษณา: โปรดใช้สิทธิของคุณกับ Google ตามที่ระบุในนโยบายความเป็นส่วนตัวของ Google</li>
+<li>เราไม่ขายข้อมูลส่วนบุคคลของคุณ (หากคุณอนุญาตให้ติดตาม Google อาจใช้ตัวระบุสำหรับโฆษณาของคุณเพื่อโฆษณาในแอปและเว็บไซต์ของบริษัทอื่น กฎหมายบางฉบับ เช่น กฎหมายของบางรัฐในสหรัฐอเมริกา อาจถือว่าเป็นการ “แบ่งปัน”)</li>
+<li>เราไม่สร้างโปรไฟล์ผู้ใช้</li>
+<li>เราไม่ได้รับหรือใช้ข้อมูลโฆษณาที่ระบุในข้อ 5</li>
+<li>Do Not Track: แอปไม่ใช่เว็บเบราว์เซอร์และไม่ตอบสนองต่อสัญญาณ “Do Not Track” แต่ใช้ตัวเลือกเรื่องการติดตามใน iOS ของคุณ (ข้อ 5) แทน</li>
 </ul>
-<p>หากคุณอยู่ในประเทศไทย สหภาพยุโรป สหราชอาณาจักร หรือภูมิภาคอื่นที่ให้สิทธิแก่เจ้าของข้อมูล และยังต้องการความช่วยเหลือ โปรดติดต่อเรา</p>
 
-<h2>8. การเก็บรักษาข้อมูล</h2>
-<p>ข้อมูลในอุปกรณ์และใน iCloud ของคุณจะถูกเก็บไว้จนกว่าคุณจะลบ เราไม่เก็บสิ่งใด เพราะเราไม่มีเซิร์ฟเวอร์</p>
+<h2>10. เด็ก</h2>
+<p>แอปนี้สำหรับผู้ใช้ทั่วไป เนื้อหาเหมาะกับทุกวัย แต่ไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 13 ปี และไม่ได้อยู่ในหมวดหมู่สำหรับเด็กของ App Store เราไม่เก็บข้อมูลส่วนบุคคลของเด็กโดยเจตนา ดูข้อ 5 สำหรับวิธีจัดการโฆษณาสำหรับเด็กและวัยรุ่น หากคุณเป็นผู้ปกครองและเชื่อว่าบุตรหลานของคุณส่งข้อมูลส่วนบุคคลมาให้เรา (เช่น ทางอีเมล) โปรดติดต่อเรา แล้วเราจะลบข้อมูลนั้น</p>
 
-<h2>9. การเปลี่ยนแปลงนโยบายนี้</h2>
+<h2>11. สิทธิของคุณ</h2>
+<p>ขึ้นอยู่กับกฎหมายในพื้นที่ของคุณ คุณอาจมีสิทธิขอเข้าถึง แก้ไข หรือลบข้อมูลส่วนบุคคลของคุณ ขอให้ระงับการใช้หรือคัดค้านการประมวลผล ขอรับหรือโอนย้ายข้อมูล และถอนความยินยอม</p>
+<ul>
+<li>ข้อมูลเกมของคุณ: คุณควบคุมได้โดยตรง — ดูได้ในแอป ลบได้จากหน้าสถิติ ด้วยการลบแอป หรือในการตั้งค่า iOS สำหรับข้อมูล iCloud (ข้อ 4) และหยุดซิงค์ได้โดยปิดการเข้าถึง iCloud ของแอป</li>
+<li>ความยินยอมเรื่องการติดตาม: เปลี่ยนได้ทุกเมื่อที่ การตั้งค่า › ความเป็นส่วนตัวและความปลอดภัย › การติดตาม</li>
+<li>ข้อมูลโฆษณา: เราเข้าถึงไม่ได้ โปรดใช้สิทธิกับ Google ตามที่ระบุในนโยบายความเป็นส่วนตัวของ Google (เรายินดีช่วยแนะนำวิธี)</li>
+<li>อีเมลที่คุณส่งถึงเรา: โปรดติดต่อ <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></li>
+</ul>
+<p>เราจะตอบภายใน 30 วัน และเมื่อกฎหมายอนุญาต อาจขยายได้อีกไม่เกิน 30 วันโดยจะแจ้งเหตุผลให้ทราบ เราอาจต้องยืนยันตัวตนของคุณ หากคุณอยู่ในสหราชอาณาจักร เราจะยืนยันการรับเรื่องร้องเรียนภายใน 30 วัน คุณยังสามารถร้องเรียนต่อหน่วยงานคุ้มครองข้อมูลในพื้นที่ของคุณได้ เช่น สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคลของไทย หรือ Information Commissioner’s Office ของสหราชอาณาจักร (<a href="https://ico.org.uk">ico.org.uk</a>)</p>
+
+<h2>12. การเก็บรักษาข้อมูล</h2>
+<ul>
+<li>ในอุปกรณ์และใน iCloud ของคุณ: จนกว่าคุณจะลบ</li>
+<li>อีเมลสนับสนุน: ลบภายในสองปีหลังจากเรื่องเสร็จสิ้น (ข้อ 6)</li>
+<li>ข้อมูลโฆษณา: Google เก็บรักษาตามนโยบายของ Google</li>
+</ul>
+
+<h2>13. การเปลี่ยนแปลงนโยบายนี้</h2>
 <p>หากนโยบายนี้เปลี่ยนแปลง เราจะอัปเดตหน้านี้และแก้ไขวันที่ “อัปเดตล่าสุด” การเปลี่ยนแปลงที่สำคัญจะแจ้งไว้ในบันทึกประจำเวอร์ชันของการอัปเดตแอปครั้งถัดไปด้วย</p>
 
-<h2>10. ติดต่อเรา</h2>
-<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></p>
+<h2>14. ติดต่อเรา</h2>
+<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> (ขอที่อยู่ทางไปรษณีย์ได้ทางอีเมล)</p>
+</section>
+
+<hr>
+
+<section id="ko" lang="ko">
+<p class="updated">최종 업데이트: 2026년 10월 10일 · <em>이 한국어판은 편의를 위해 영어 원문을 번역한 것으로, 내용이 다를 경우 영어판이 우선합니다.</em></p>
+<p>리버시 Pace(이하 “앱”)는 대만에 거주하는 개인 개발자 Chien-Ting Liao(이하 “저희”)가 개발·운영합니다. 이 개인정보 처리방침은 앱을 사용할 때 어떤 정보가 관련되는지, 누가 처리하는지, 이용자가 어떤 선택을 할 수 있는지 설명합니다.</p>
+
+<div class="summary">
+<p><strong>요약</strong></p>
+<ul>
+<li>계정도, 로그인도 필요 없습니다. 앱 자체는 이용자의 정보를 저희에게 보내지 않습니다.</li>
+<li>게임 기록은 이용자의 기기에, iCloud를 사용하면 이용자 본인의 iCloud에 저장되며 저희는 볼 수 없습니다.</li>
+<li>앱은 Google 광고를 표시합니다. Google은 광고 표시와 측정을 위해 일부 기기·이용 정보를 받습니다. 추적을 허용하지 않으면 비개인 맞춤 광고만 표시됩니다.</li>
+<li>이메일을 보내 주시면 답장하는 데에만 사용합니다.</li>
+<li>문의 및 요청: <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></li>
+</ul>
+</div>
+
+<h2>1. 개인정보 처리자 및 개인정보 보호책임자</h2>
+<p>앱은 대만의 개인 개발자 Chien-Ting Liao가 제공하며, 앱의 개인정보 처리에 대한 책임을 지고 개인정보 보호책임자 역할도 맡습니다(한국 개인정보 보호법상 개인정보 보호책임자, 싱가포르 PDPA상 데이터 보호 책임자, 뉴질랜드 개인정보보호법상 Privacy Officer, 퀘벡 법률상 개인정보 보호 책임자 포함).</p>
+<ul>
+<li>개인정보 보호책임자: Chien-Ting Liao</li>
+<li>연락처: <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> (우편 주소는 이메일로 요청하시면 안내해 드립니다)</li>
+</ul>
+
+<h2>2. 앱이 수집하지 않는 정보</h2>
+<p>앱은 회원가입이나 계정이 필요 없으며, Apple ID, 이름, 이메일 주소, 전화번호를 받지 않고, 연락처·사진·위치·건강 정보에 대한 접근도 요청하지 않습니다. 저희는 서버를 운영하지 않으며, 앱 자체는 저희에게 아무것도 보내지 않습니다.</p>
+
+<h2>3. 기기에 저장되는 정보</h2>
+<p>앱은 게임 기능을 제공하기 위해 다음 정보를 이용자의 기기에 저장합니다.</p>
+<ul>
+<li>대국 기록: 난이도, 승패, 점수, 소요 시간, 기보, 무르기 및 다시하기 횟수</li>
+<li>묘수풀이 진행 상황과 타임어택 최고 기록</li>
+<li>환경설정: 인터페이스 언어, 사운드 설정, 탭하여 두기 방식</li>
+<li>앱 버전과 기기 모델 식별 코드(기기 내 성능·호환성 처리에만 사용)</li>
+</ul>
+<p>이 정보는 기기에 저장되며, iCloud 동기화를 켜면 이용자 본인의 iCloud에도 저장됩니다(4항 참조). 전적 화면에서 언제든 모든 대국 기록을 지울 수 있으며, 다른 기기의 기록도 함께 삭제됩니다. 묘수풀이 진행 상황과 진행 중인 대국은 유지됩니다. 앱을 삭제하면 이 기기의 데이터는 삭제되지만 iCloud 데이터는 삭제되지 않습니다(4항 참조).</p>
+
+<h2>4. iCloud 동기화</h2>
+<p>iCloud에 로그인되어 있고 앱의 iCloud 사용을 허용한 경우, 대국 기록, 묘수풀이 진행 상황, 타임어택 최고 기록이 이용자 본인의 비공개 iCloud 저장 공간에 동기화되어 기기를 바꾸거나 다시 설치해도 유지됩니다. 기록 변조를 감지하는 데에만 쓰이는 무작위 생성 키도 같은 이유로 이용자의 iCloud 키체인에 보관되며, 개인정보는 포함되지 않습니다.</p>
+<p>이 데이터는 Apple 계정으로 보호되는 이용자 본인의 iCloud 저장 공간에 있으며, 저희는 읽거나 수정하거나 삭제할 수 없습니다.</p>
+<p>앱을 삭제해도 iCloud 데이터는 삭제되지 않습니다. 삭제하려면 설정 › [이름] › iCloud › 저장 공간 관리에서 리버시 Pace를 선택해 데이터를 삭제하세요(iOS 버전에 따라 명칭이 다를 수 있습니다).</p>
+<p>iOS 설정에서 언제든 앱의 iCloud 접근을 끌 수 있습니다.</p>
+
+<h2>5. 광고(행태정보 수집 장치)</h2>
+<p>앱은 무료이며, 앱에 포함된 Google 소프트웨어를 통해 Google AdMob 광고를 표시합니다. 이 소프트웨어는 이용자의 기기에서 Google로 직접 정보를 보내며, 저희는 이를 받거나 접근할 수 없습니다.</p>
+<p>Google과 그 파트너는 다음 정보를 수집할 수 있습니다.</p>
+<ul>
+<li>기기 식별자(추적을 허용한 경우 광고 식별자 포함)</li>
+<li>IP 주소로 추정한 대략적인 위치(GPS 아님)</li>
+<li>기기 정보(모델, OS 버전, 언어)</li>
+<li>광고 데이터 및 광고 상호작용(노출, 클릭)</li>
+<li>광고 관련 앱 이용 정보(예: 앱 실행)</li>
+<li>진단 정보(충돌, 성능 및 기타 진단)</li>
+</ul>
+<p>목적: 광고 표시, 같은 광고의 노출 횟수 제한, 광고 측정, 사기·남용 방지 및 관련 분석</p>
+<p><strong>추적 선택(App Tracking Transparency).</strong> iOS가 앱의 추적 허용 여부를 묻습니다. 허용하지 않는 한 추적은 꺼져 있습니다. 허용하면 Google이 기기의 광고 식별자를 사용해 다른 회사의 앱과 웹사이트에서의 활동을 바탕으로 개인 맞춤 광고를 표시할 수 있습니다. 허용하지 않으면 비개인 맞춤 광고만 표시되며 게임은 그대로 이용할 수 있습니다. 이 경우에도 Google은 광고 빈도 제한, 집계 보고, 사기 방지를 위해 기기 식별자 등의 정보를 사용합니다. 설정 › 개인정보 보호 및 보안 › 추적에서 언제든 변경할 수 있습니다.</p>
+<p><strong>아동·청소년.</strong> iOS는 자녀 계정, 그리고 Apple 계정으로 로그인한 출생 연도 기준 만 18세 미만 이용자에게 앱이 추적을 요청하는 것을 허용하지 않으며, 이 이용자들에게는 비개인 맞춤 광고만 표시됩니다. 앱의 광고는 모든 연령에 적합한 콘텐츠로 제한됩니다.</p>
+<p><strong>영국.</strong> 기기 지역 또는 App Store 국가가 영국이면 추적 선택과 관계없이 항상 비개인 맞춤 광고만 요청합니다.</p>
+<p><strong>광고 신고.</strong> 부적절하거나 연령에 맞지 않는 광고를 보시면 광고 내용과 본 시각을 적어 <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>으로 알려 주세요. 광고에 자체 옵션 아이콘이 있으면 그곳에서도 신고할 수 있습니다.</p>
+<p>Google은 자체 개인정보처리방침에 따라 이 정보를 처리하며, 그 방침과 게시자 약관에 따라 광고 서비스로 받은 정보를 보호할 것을 약속합니다. 저희는 이 방침에 명시된 수준 이상으로 이용자의 정보를 보호하는 제3자 서비스만 사용합니다.<br>
+Google 개인정보처리방침: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
+Google이 자사 서비스를 사용하는 사이트 또는 앱의 정보를 사용하는 방법: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+
+<h2>6. 저희에게 보내는 이메일</h2>
+<p>연락하시면 이메일 주소, 적어 주신 이름, 메시지 내용을 받게 됩니다. 이는 답장과 요청(개인정보 관련 요청 포함) 처리에만 사용하며, 이메일 서비스 제공자(도메인 메일 전달 서비스 및 Google Gmail, 미국 등지의 서버에 저장) 외에는 누구에게도 제공하지 않습니다. 메시지는 비밀번호로 보호되는 이메일 계정에만 보관하며 다른 곳에 복사하지 않습니다. 문의 처리가 끝난 후 2년 이내에 삭제하며, 법적 청구 대응을 위해 더 오래 보관해야 하는 경우는 예외입니다.</p>
+
+<h2>7. 처리의 법적 근거(관련 법률이 적용되는 경우)</h2>
+<ul>
+<li>개인 맞춤 광고: iOS 추적 요청을 통한 이용자의 동의(설정에서 언제든 철회 가능)</li>
+<li>비개인 맞춤 광고 및 Google의 빈도 제한·광고 측정·사기 방지: 앱을 무료로 유지하기 위한 저희의 정당한 이익</li>
+<li>이메일 답장: 이용자의 요청 및 이에 답하기 위한 저희의 정당한 이익</li>
+<li>기기와 iCloud의 게임 데이터: 저희가 수집하지 않으며, 앱 기능 제공을 위해 이용자 측에 보관됩니다</li>
+</ul>
+
+<h2>8. 개인정보의 국외 이전</h2>
+<p>저희는 대만에 있습니다. 광고 정보는 앱을 사용하는 동안 이용자의 기기에서 Google LLC(미국)로 네트워크를 통해 직접 전송되며, 미국 및 Google이 운영하는 기타 국가에서 처리되고 Google 방침에 따라 보유됩니다(전송 항목: 5항의 정보). 추적을 허용하지 않을 수 있으나, 비개인 맞춤 광고에 필요한 정보는 앱 사용 시 전송됩니다. 지원 이메일은 이메일 서비스 제공자에 의해 미국 및 기타 국가에 저장됩니다. 이들 국가의 개인정보 보호 규정은 이용자의 국가와 다를 수 있습니다.</p>
+
+<h2>9. 하지 않는 일</h2>
+<ul>
+<li>개인정보를 판매하지 않습니다. (추적을 허용하면 Google이 광고 식별자를 다른 회사의 앱과 웹사이트 광고에 사용할 수 있으며, 미국 일부 주법 등은 이를 “공유”로 볼 수 있습니다.)</li>
+<li>이용자 프로필을 만들지 않습니다.</li>
+<li>5항의 광고 정보를 받거나 사용하지 않습니다.</li>
+<li>Do Not Track: 앱은 웹 브라우저가 아니므로 “Do Not Track” 신호에 응답하지 않으며, iOS의 추적 선택(5항)이 적용됩니다.</li>
+</ul>
+
+<h2>10. 아동</h2>
+<p>앱은 일반 이용자를 위한 것으로, 콘텐츠는 모든 연령에 적합하지만 만 13세 미만 아동을 대상으로 하지 않으며 App Store 키즈 카테고리에 속하지 않습니다. 아동의 개인정보를 알면서 수집하지 않습니다. 아동·청소년에 대한 광고 처리는 5항을 참고하세요. 부모 또는 보호자께서 자녀가 저희에게 개인정보를 보냈다고 생각되면(예: 이메일) 연락해 주세요. 삭제하겠습니다.</p>
+
+<h2>11. 이용자의 권리</h2>
+<p>거주 지역의 법률에 따라 개인정보의 열람, 정정·삭제, 처리 정지 또는 처리 제한, 처리에 대한 이의 제기, 개인정보 이동, 동의 철회를 요구할 권리가 있을 수 있습니다.</p>
+<ul>
+<li>게임 데이터: 직접 관리할 수 있습니다 — 앱에서 확인하고, 전적 화면·앱 삭제·iOS 설정(iCloud 데이터, 4항)으로 삭제하며, 앱의 iCloud 접근을 끄면 동기화가 중지됩니다.</li>
+<li>추적 동의: 설정 › 개인정보 보호 및 보안 › 추적에서 언제든 변경할 수 있습니다.</li>
+<li>광고 정보: 저희는 접근할 수 없으므로 Google 개인정보처리방침에 안내된 방법으로 Google에 권리를 행사해 주세요(방법을 찾는 것은 기꺼이 도와드립니다).</li>
+<li>보내신 이메일: <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>으로 요청해 주세요.</li>
+</ul>
+<p>30일 이내에 답변드리며, 법률이 허용하는 경우 최대 30일 연장할 수 있고 그 사유를 알려 드립니다. 본인 확인이 필요할 수 있습니다. 영국에 계신 경우 불만 접수 사실을 30일 이내에 확인해 드립니다. 거주 지역의 개인정보 보호 감독기관에 신고할 수도 있습니다(예: 한국인터넷진흥원 개인정보침해 신고센터 <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>, 국번 없이 118).</p>
+
+<h2>12. 보유 기간</h2>
+<ul>
+<li>기기와 iCloud의 데이터: 이용자가 삭제할 때까지</li>
+<li>지원 이메일: 문의 처리가 끝난 후 2년 이내 삭제(6항)</li>
+<li>광고 정보: Google 방침에 따라 Google이 보유</li>
+</ul>
+
+<h2>13. 방침 변경</h2>
+<p>방침이 변경되면 이 페이지를 업데이트하고 “최종 업데이트” 날짜를 수정합니다. 중요한 변경은 다음 앱 업데이트의 버전 정보에도 안내합니다.</p>
+
+<h2>14. 연락처</h2>
+<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> (우편 주소는 이메일로 요청하시면 안내해 드립니다)</p>
+</section>
+
+<hr>
+
+<section id="fr" lang="fr">
+<p class="updated">Dernière mise à jour : 10 octobre 2026 · <em>Cette version française est une traduction de l’original anglais fournie pour votre commodité ; en cas de divergence, la version anglaise prévaut.</em></p>
+<p>Reversi Pace (« l’application ») est développée et maintenue par Chien-Ting Liao, développeur indépendant établi à Taïwan (« nous »). La présente politique explique quelles données sont en jeu lorsque vous utilisez l’application, qui les traite et quels choix s’offrent à vous.</p>
+
+<div class="summary">
+<p><strong>En bref</strong></p>
+<ul>
+<li>Aucun compte, aucune connexion. L’application elle-même ne nous transmet pas vos données.</li>
+<li>Vos parties sont enregistrées sur votre appareil et, si vous utilisez iCloud, dans votre propre iCloud — nous n’y avons pas accès.</li>
+<li>L’application affiche des publicités de Google. Google reçoit certaines données sur l’appareil et l’utilisation pour afficher et mesurer les publicités. Si vous refusez le suivi, vous ne voyez que des publicités non personnalisées.</li>
+<li>Si vous nous écrivez, nous utilisons votre message uniquement pour vous répondre.</li>
+<li>Questions ou demandes : <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></li>
+</ul>
+</div>
+
+<h2>1. Responsable</h2>
+<p>L’application est fournie par Chien-Ting Liao, développeur indépendant à Taïwan, qui est responsable du traitement des renseignements personnels lié à l’application et agit aussi comme responsable de la protection des renseignements personnels au sens de la loi québécoise — de même que comme Data Protection Officer au sens de la PDPA de Singapour, Privacy Officer au sens de la loi néo-zélandaise et 개인정보 보호책임자 au sens de la PIPA coréenne. Contact : <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>. Adresse postale communiquée sur demande par courriel.</p>
+
+<h2>2. Ce que l’application ne recueille pas</h2>
+<p>L’application ne demande ni inscription ni compte. Elle n’obtient pas votre identifiant Apple, votre nom, votre adresse courriel ni votre numéro de téléphone, et ne demande pas l’accès à vos contacts, photos, données de localisation ou de santé. Nous n’exploitons aucun serveur ; l’application elle-même ne nous envoie rien.</p>
+
+<h2>3. Données enregistrées sur votre appareil</h2>
+<p>L’application enregistre les éléments suivants sur votre appareil pour faire fonctionner le jeu :</p>
+<ul>
+<li>Historique des parties : difficulté, résultat, score, temps écoulé, notation des coups, nombre d’annulations et de reprises</li>
+<li>Progression des Puzzles de finale et meilleur score au Rush de problèmes</li>
+<li>Préférences : langue de l’interface, réglages du son, mode de pose par toucher</li>
+<li>Version de l’application et code du modèle d’appareil (utilisés localement pour la performance et la compatibilité seulement)</li>
+</ul>
+<p>Ces données restent sur votre appareil et, si la synchronisation iCloud est activée, dans votre propre iCloud (voir section 4). Vous pouvez effacer tout l’historique des parties à tout moment depuis l’écran Statistiques ; il est alors aussi supprimé de vos autres appareils, tandis que la progression des Puzzles de finale et une partie en cours sont conservées. Supprimer l’application efface les données de cet appareil, mais pas vos données iCloud (voir section 4).</p>
+
+<h2>4. Synchronisation iCloud</h2>
+<p>Si vous êtes connecté à iCloud et avez autorisé l’application à l’utiliser, votre historique des parties, votre progression des Puzzles de finale et votre meilleur score au Rush de problèmes sont synchronisés dans votre espace iCloud privé, afin d’être conservés lors d’un changement d’appareil ou d’une réinstallation. Une clé générée aléatoirement, servant uniquement à détecter toute modification de vos parties, est conservée dans votre trousseau iCloud pour la même raison ; elle ne contient aucun renseignement personnel.</p>
+<p>Ces données se trouvent dans votre propre espace iCloud, protégé par votre compte Apple. Nous ne pouvons ni les lire, ni les modifier, ni les supprimer.</p>
+<p>Supprimer l’application ne supprime pas ces données iCloud. Pour les supprimer, allez dans Réglages › [votre nom] › iCloud › Gérer le stockage, choisissez Reversi Pace et supprimez ses données (les libellés peuvent varier selon la version d’iOS).</p>
+<p>Vous pouvez désactiver à tout moment l’accès de l’application à iCloud dans les réglages d’iOS.</p>
+
+<h2>5. Publicité</h2>
+<p>L’application est gratuite et affiche des publicités fournies par Google AdMob, au moyen du logiciel de Google intégré à l’application. Ce logiciel envoie des données directement de votre appareil à Google ; nous ne les recevons pas et ne pouvons pas y accéder.</p>
+<p>Google et ses partenaires peuvent recueillir :</p>
+<ul>
+<li>des identifiants de l’appareil, y compris l’identifiant publicitaire si vous autorisez le suivi</li>
+<li>votre position approximative, estimée à partir de votre adresse IP (pas par GPS)</li>
+<li>des renseignements sur l’appareil (modèle, version du système, langue)</li>
+<li>des données publicitaires et vos interactions avec les publicités (affichages, clics)</li>
+<li>des données d’utilisation de l’application liées aux publicités (par exemple les lancements)</li>
+<li>des données de diagnostic (plantages, performances et autres diagnostics)</li>
+</ul>
+<p>Finalités : afficher des publicités, limiter la fréquence d’une même publicité, mesurer les publicités, prévenir la fraude et les abus, et analyses connexes.</p>
+<p><strong>Votre choix de suivi (App Tracking Transparency).</strong> iOS vous demande si l’application peut vous suivre. Le suivi est désactivé par défaut : il ne s’active que si vous l’autorisez. Si vous l’autorisez, Google peut utiliser l’identifiant publicitaire de votre appareil pour vous montrer des publicités personnalisées selon votre activité dans les applications et sites Web d’autres entreprises. Si vous refusez, vous ne voyez que des publicités non personnalisées et le jeu fonctionne exactement de la même façon ; même dans ce cas, Google utilise des identifiants de l’appareil et des renseignements similaires pour limiter la fréquence des publicités, produire des rapports agrégés et prévenir la fraude. Vous pouvez modifier votre choix à tout moment dans Réglages › Confidentialité et sécurité › Suivi.</p>
+<p><strong>Enfants et adolescents.</strong> iOS ne permet pas aux applications de demander le suivi aux comptes enfants ni aux utilisateurs de moins de 18 ans selon leur année de naissance connectés avec leur compte Apple ; ces utilisateurs ne voient que des publicités non personnalisées. Les publicités de l’application se limitent à des contenus adaptés à tous les âges.</p>
+<p><strong>Royaume-Uni.</strong> Si la région de votre appareil ou le pays de votre App Store est le Royaume-Uni, l’application demande toujours des publicités non personnalisées, quel que soit votre choix de suivi.</p>
+<p><strong>Signaler une publicité.</strong> Si vous voyez une publicité qui semble inappropriée ou ne convient pas à votre âge, écrivez-nous à <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> en décrivant la publicité et le moment où vous l’avez vue. Lorsque la publicité affiche sa propre icône d’options, vous pouvez aussi la signaler à cet endroit.</p>
+<p>Google traite ces données selon sa propre politique de confidentialité et s’engage à protéger les données reçues par ses services publicitaires conformément à cette politique et à ses conditions applicables aux éditeurs. Nous n’utilisons que des services tiers qui protègent vos données au moins au niveau décrit dans la présente politique.<br>
+Politique de confidentialité de Google : <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
+Comment Google utilise les données des sites ou applications qui utilisent ses services : <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+
+<h2>6. Courriels que vous nous envoyez</h2>
+<p>Si vous communiquez avec nous, nous recevons votre adresse courriel, le nom que vous indiquez le cas échéant et le contenu de votre message. Nous les utilisons uniquement pour vous répondre et traiter votre demande (y compris une demande relative à la vie privée), et ne les communiquons à personne d’autre que nos fournisseurs de messagerie (le service de transfert de courriel du domaine et Gmail de Google, dont les serveurs se trouvent notamment aux États-Unis). Les messages sont conservés uniquement dans un compte de messagerie protégé par mot de passe et ne sont pas copiés ailleurs. Nous supprimons les courriels de soutien dans les deux ans suivant la clôture de votre demande, sauf s’il faut les conserver plus longtemps pour une réclamation juridique.</p>
+
+<h2>7. Fondements juridiques (lorsque la loi en exige un)</h2>
+<ul>
+<li>Publicités personnalisées : votre consentement, donné par la demande de suivi d’iOS ; vous pouvez le retirer à tout moment dans Réglages.</li>
+<li>Publicités non personnalisées, ainsi que la limitation de fréquence, la mesure et la prévention de la fraude par Google : notre intérêt légitime à garder l’application gratuite.</li>
+<li>Réponse à vos courriels : votre demande et notre intérêt légitime à y répondre.</li>
+<li>Données de jeu sur votre appareil et dans votre iCloud : nous ne les recueillons pas ; elles sont conservées de votre côté pour faire fonctionner l’application.</li>
+</ul>
+
+<h2>8. Communication de renseignements à l’extérieur de votre pays</h2>
+<p>Nous sommes établis à Taïwan. Les données publicitaires vont directement de votre appareil à Google et peuvent être traitées aux États-Unis et dans d’autres pays où Google exerce ses activités. Les courriels de soutien sont conservés par nos fournisseurs de messagerie aux États-Unis et dans d’autres pays. Ces pays peuvent avoir des règles de protection des renseignements personnels différentes de celles de votre lieu de résidence, y compris du Québec.</p>
+
+<h2>9. Ce que nous ne faisons pas</h2>
+<ul>
+<li>Nous ne vendons pas vos renseignements personnels. (Si vous autorisez le suivi, Google peut utiliser votre identifiant publicitaire pour de la publicité dans les applications et sites Web d’autres entreprises ; certaines lois, comme certaines lois d’États américains, peuvent considérer cela comme un « partage ».)</li>
+<li>Nous ne créons pas de profils d’utilisateurs.</li>
+<li>Nous ne recevons ni n’utilisons les données publicitaires décrites à la section 5.</li>
+<li>« Do Not Track » : l’application n’est pas un navigateur Web et ne répond pas aux signaux « Do Not Track » ; c’est votre choix de suivi dans iOS (section 5) qui s’applique.</li>
+</ul>
+
+<h2>10. Enfants</h2>
+<p>L’application s’adresse au grand public : son contenu convient à tous les âges, mais elle ne vise pas les enfants de moins de 13 ans et ne fait pas partie de la catégorie Enfants de l’App Store. Nous ne recueillons pas sciemment de renseignements personnels sur des enfants. Voir la section 5 pour les publicités présentées aux enfants et aux adolescents. Si vous êtes parent ou tuteur et croyez que votre enfant nous a transmis des renseignements personnels (par exemple par courriel), communiquez avec nous et nous les supprimerons.</p>
+
+<h2>11. Vos droits</h2>
+<p>Selon les lois de l’endroit où vous vivez, vous pouvez avoir le droit d’accéder à vos renseignements personnels, de les faire rectifier ou supprimer, d’en restreindre le traitement ou de vous y opposer, à la portabilité, et de retirer votre consentement.</p>
+<ul>
+<li>Vos données de jeu : vous les contrôlez directement — consultez-les dans l’application ; supprimez-les depuis l’écran Statistiques, en supprimant l’application ou dans les réglages d’iOS pour les données iCloud (section 4) ; arrêtez la synchronisation en désactivant l’accès iCloud de l’application.</li>
+<li>Votre consentement au suivi : modifiable à tout moment dans Réglages › Confidentialité et sécurité › Suivi.</li>
+<li>Données publicitaires : nous n’y avons pas accès ; exercez vos droits auprès de Google comme le décrit sa politique de confidentialité (nous vous aiderons volontiers à trouver comment).</li>
+<li>Courriels que vous nous avez envoyés : écrivez à <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>.</li>
+</ul>
+<p>Nous répondons dans un délai de 30 jours ; lorsque la loi le permet, ce délai peut être prolongé d’au plus 30 jours et nous vous en indiquerons la raison. Nous pourrions devoir vérifier votre identité. Au Royaume-Uni, nous accusons réception d’une plainte dans les 30 jours. Vous pouvez aussi porter plainte auprès de l’autorité de protection des renseignements personnels de votre région — par exemple la Commission d’accès à l’information du Québec, le Commissariat à la protection de la vie privée du Canada ou, au Royaume-Uni, l’Information Commissioner’s Office (<a href="https://ico.org.uk">ico.org.uk</a>).</p>
+
+<h2>12. Conservation</h2>
+<ul>
+<li>Sur votre appareil et dans votre iCloud : jusqu’à ce que vous les supprimiez.</li>
+<li>Courriels de soutien : supprimés dans les deux ans suivant la clôture de votre demande (section 6).</li>
+<li>Données publicitaires : conservées par Google selon sa propre politique.</li>
+</ul>
+
+<h2>13. Modifications de la présente politique</h2>
+<p>Si la présente politique change, nous mettrons cette page à jour et modifierons la date de « dernière mise à jour ». Les changements importants seront aussi mentionnés dans les notes de version de la prochaine mise à jour de l’application.</p>
+
+<h2>14. Nous joindre</h2>
+<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> (adresse postale sur demande)</p>
+</section>
+
+<hr>
+
+<section id="ja" lang="ja">
+<p class="updated">最終更新:2026年10月10日・<em>この日本語版は英語の原文を便宜上翻訳したものです。内容に相違がある場合は英語版が優先します。</em></p>
+<p>リバーシ Pace(以下「本アプリ」)は、台湾在住の個人開発者 Chien-Ting Liao(以下「当方」)が開発・運営しています。本ポリシーは、本アプリの利用時にどのような情報が関わるか、誰が取り扱うか、利用者がどのような選択をできるかを説明します。</p>
+
+<div class="summary">
+<p><strong>要約</strong></p>
+<ul>
+<li>アカウント登録もサインインも不要です。本アプリ自体が利用者の情報を当方に送ることはありません。</li>
+<li>対局の記録は利用者の端末に、iCloud を使う場合は利用者自身の iCloud に保存され、当方は見ることができません。</li>
+<li>本アプリは Google の広告を表示します。Google は広告の表示と効果測定のため、端末や利用に関する一部の情報を受け取ります。トラッキングを許可しない場合、パーソナライズされていない広告のみが表示されます。</li>
+<li>メールをいただいた場合は、返信のためにのみ使用します。</li>
+<li>お問い合わせ・ご請求:<a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a></li>
+</ul>
+</div>
+
+<h2>1. 事業者・責任者</h2>
+<p>本アプリは台湾の個人開発者 Chien-Ting Liao が提供し、本アプリにおける個人情報の取扱いに責任を負うとともに、プライバシー責任者を務めます(シンガポール PDPA のデータ保護責任者、ニュージーランド プライバシー法の Privacy Officer、ケベック州法の個人情報保護責任者、韓国 個人情報保護法の個人情報保護責任者を含みます)。連絡先:<a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>。住所はメールでご請求いただければ遅滞なくお知らせします。</p>
+
+<h2>2. 本アプリが収集しない情報</h2>
+<p>本アプリは登録やアカウントを必要とせず、Apple ID、氏名、メールアドレス、電話番号を取得しません。連絡先、写真、位置情報、健康データへのアクセスも求めません。当方はサーバーを運用しておらず、本アプリ自体は当方に何も送信しません。</p>
+
+<h2>3. 端末に保存される情報</h2>
+<p>本アプリはゲーム機能を提供するため、次の情報を利用者の端末に保存します。</p>
+<ul>
+<li>対局記録:難易度、勝敗、得点、所要時間、棋譜、待ったとやり直しの回数</li>
+<li>詰めリバーシの進捗とタイムアタックの最高記録</li>
+<li>設定:表示言語、サウンド設定、タップで置く方式</li>
+<li>アプリのバージョンと端末の機種コード(端末内での性能・互換性の処理にのみ使用)</li>
+</ul>
+<p>これらは端末に保存され、iCloud 同期がオンの場合は利用者自身の iCloud にも保存されます(第4項)。「成績」画面からいつでもすべての対局記録を消去でき、他の端末の記録も削除されます。詰めリバーシの進捗と対局中のゲームは残ります。本アプリを削除するとこの端末のデータは消えますが、iCloud のデータは消えません(第4項)。</p>
+
+<h2>4. iCloud 同期</h2>
+<p>iCloud にサインインし、本アプリの iCloud 利用を許可している場合、対局記録、詰めリバーシの進捗、タイムアタックの最高記録が利用者自身の非公開の iCloud 領域に同期され、機種変更や再インストール後も引き継がれます。記録の改ざん検出にのみ使う無作為に生成された鍵も、同じ理由で利用者の iCloud キーチェーンに保存されます。この鍵に個人情報は含まれません。</p>
+<p>このデータは利用者の Apple アカウントで保護された利用者自身の iCloud 領域にあり、当方は閲覧・変更・削除できません。</p>
+<p>本アプリを削除しても iCloud のデータは削除されません。削除するには「設定 › [ユーザ名] › iCloud › ストレージを管理」でリバーシ Pace を選び、データを削除してください(iOS のバージョンにより表記が異なる場合があります)。</p>
+<p>iOS の設定で、いつでも本アプリの iCloud アクセスをオフにできます。</p>
+
+<h2>5. 広告(外部送信)</h2>
+<p>本アプリは無料で、組み込まれた Google のソフトウェアを通じて Google AdMob の広告を表示します。このソフトウェアは利用者の端末から Google へ直接情報を送信し、当方はそれを受け取らず、アクセスもできません。</p>
+<p>Google およびそのパートナーは次の情報を収集することがあります。</p>
+<ul>
+<li>端末識別子(トラッキングを許可した場合は広告識別子を含む)</li>
+<li>IP アドレスから推定したおおよその位置(GPS ではありません)</li>
+<li>端末情報(機種、OS のバージョン、言語)</li>
+<li>広告データと広告への反応(表示、クリック)</li>
+<li>広告に関連するアプリの利用情報(アプリの起動など)</li>
+<li>診断情報(クラッシュ、パフォーマンス、その他の診断)</li>
+</ul>
+<p>目的:広告の表示、同じ広告の表示回数の制限、広告の効果測定、不正・濫用の防止、および関連する分析</p>
+<p><strong>トラッキングの選択(App Tracking Transparency)。</strong>iOS が本アプリによるトラッキングを許可するかを尋ねます。許可しない限りトラッキングは行われません。許可すると、Google は端末の広告識別子を使い、他社のアプリやウェブサイトでの行動に基づくパーソナライズ広告を表示することがあります。許可しない場合はパーソナライズされていない広告のみが表示され、ゲームはそのまま遊べます。この場合も Google は、表示回数の制限、集計レポート、不正防止のために端末識別子などの情報を使用します。選択は「設定 › プライバシーとセキュリティ › トラッキング」でいつでも変更できます。</p>
+<p><strong>子ども・未成年。</strong>iOS は、子ども用アカウント、および Apple アカウントでサインインしている生年で 18 歳未満の利用者に対して、アプリがトラッキングを要求することを認めていません。これらの利用者にはパーソナライズされていない広告のみが表示されます。本アプリの広告は全年齢に適した内容に限定しています。</p>
+<p><strong>英国。</strong>端末の地域または App Store の国・地域が英国の場合、トラッキングの選択にかかわらず、常にパーソナライズされていない広告のみを要求します。</p>
+<p><strong>広告の報告。</strong>不適切な広告や年齢に合わない広告を見かけた場合は、広告の内容と表示された時刻を添えて <a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> までお知らせください。広告に独自のオプションアイコンがある場合は、そこからも報告できます。</p>
+<p>Google は自社のプライバシーポリシーに基づいてこれらの情報を取り扱い、同ポリシーおよびパブリッシャー向け規約に基づき、広告サービスを通じて受け取った情報を保護することを約束しています。当方は、本ポリシーに記載した水準以上に利用者の情報を保護する第三者サービスのみを利用します。<br>
+Google プライバシーポリシー:<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>
+Google のサービスを使用するサイトやアプリから収集した情報の Google による使用:<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+
+<h2>6. 当方へのメール</h2>
+<p>お問い合わせいただくと、メールアドレス、記載された氏名、メッセージの内容を受け取ります。これらは返信とご請求(プライバシーに関するご請求を含みます)の対応にのみ使用し、メールサービス事業者(ドメインのメール転送サービスおよび Google の Gmail。米国などのサーバーに保存されます)以外には提供しません。メッセージはパスワードで保護されたメールアカウントにのみ保管し、他へ複製しません。ご用件の完了後 2 年以内に削除します。ただし、法的請求への対応のため長く保管する必要がある場合を除きます。</p>
+
+<h2>7. 法的根拠(適用される法律で必要な場合)</h2>
+<ul>
+<li>パーソナライズ広告:iOS のトラッキング確認による利用者の同意(設定でいつでも撤回できます)</li>
+<li>パーソナライズされていない広告、ならびに Google による表示回数の制限・効果測定・不正防止:本アプリを無料で提供し続けるための当方の正当な利益</li>
+<li>メールへの返信:利用者のご請求、および返信するための当方の正当な利益</li>
+<li>端末と iCloud のゲームデータ:当方は収集しません。本アプリの機能を提供するために利用者側に保存されます</li>
+</ul>
+
+<h2>8. 外国への移転</h2>
+<p>当方は台湾にいます。広告に関する情報は利用者の端末から Google に直接送信され、米国および Google が事業を行うその他の国で処理されることがあります。サポートメールはメールサービス事業者により米国およびその他の国で保存されます。これらの国の個人情報保護制度は、利用者の国と異なる場合があります。</p>
+
+<h2>9. 当方が行わないこと</h2>
+<ul>
+<li>個人データを販売しません。(トラッキングを許可した場合、Google が広告識別子を他社のアプリやウェブサイトでの広告に使用することがあり、米国の一部の州法などではこれを「共有」とみなす場合があります。)</li>
+<li>利用者のプロファイルを作成しません。</li>
+<li>第5項の広告に関する情報を受け取らず、使用もしません。</li>
+<li>Do Not Track:本アプリはウェブブラウザではないため「Do Not Track」シグナルには応答せず、iOS のトラッキングの選択(第5項)が適用されます。</li>
+</ul>
+
+<h2>10. 子ども</h2>
+<p>本アプリは一般向けで、内容は全年齢に適していますが、13 歳未満の子どもを対象としたものではなく、App Store のキッズカテゴリにも参加していません。当方が子どもの個人情報を意図的に収集することはありません。子ども・未成年に対する広告の扱いは第5項をご覧ください。保護者の方で、お子さまが当方に個人情報を送ったと思われる場合(メールなど)はご連絡ください。削除いたします。</p>
+
+<h2>11. 利用者の権利</h2>
+<p>お住まいの地域の法律により、個人情報の開示、訂正、削除、利用停止・処理の制限、処理への異議、データポータビリティ、同意の撤回を求める権利がある場合があります。</p>
+<ul>
+<li>ゲームデータ:利用者が直接管理できます — アプリ内で確認し、「成績」画面・アプリの削除・iOS の設定(iCloud データ、第4項)で削除でき、本アプリの iCloud アクセスをオフにすれば同期を停止できます。</li>
+<li>トラッキングの同意:「設定 › プライバシーとセキュリティ › トラッキング」でいつでも変更できます。</li>
+<li>広告に関する情報:当方はアクセスできないため、Google のプライバシーポリシーに記載された方法で Google に対して権利を行使してください(方法のご案内はお手伝いします)。</li>
+<li>当方へのメール:<a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a> までご請求ください。</li>
+</ul>
+<p>30 日以内に回答します。法律で認められる場合は最長 30 日延長することがあり、その理由をお知らせします。ご本人確認をお願いする場合があります。英国にお住まいの方の苦情は、30 日以内に受付を確認します。お住まいの地域のデータ保護当局に苦情を申し立てることもできます(例:日本の個人情報保護委員会、英国の Information Commissioner’s Office <a href="https://ico.org.uk">ico.org.uk</a>)。</p>
+
+<h2>12. 保存期間</h2>
+<ul>
+<li>端末と iCloud のデータ:利用者が削除するまで</li>
+<li>サポートメール:ご用件の完了後 2 年以内に削除(第6項)</li>
+<li>広告に関する情報:Google のポリシーに従い Google が保存</li>
+</ul>
+
+<h2>13. ポリシーの変更</h2>
+<p>本ポリシーを変更する場合はこのページを更新し、「最終更新」の日付を改めます。重要な変更は、次のアプリ更新のリリースノートでもお知らせします。</p>
+
+<h2>14. お問い合わせ</h2>
+<p><a href="mailto:support@kaolinwing.com">support@kaolinwing.com</a>(住所はご請求に応じてお知らせします)</p>
 </section>
 
 
